@@ -1,0 +1,49 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+img {
+  border: 1px solid black;
+}
+
+.noteHighlight, .noteRecommend, .noteWarning, .noteManual {
+   padding: 2em 1em 1em 2em;
+   margin: 30px 50px 30px 50px;
+   border-radius: 4px;
+}
+
+.noteHighlight {
+  border-left: 10px solid #f6a500;
+  background-color: #dcdcdc;
+}
+
+
+.noteRecommend {
+  border-left: 10px solid #acc90d;
+  background-color: #dcdcdc;
+}
+
+.noteWarning {
+  border-left: 10px solid #f08eb9;
+  background-color: #dcdcdc;
+}
+
+.noteManual {
+  border-left: 10px solid #0863c8;
+  background-color: #b4c7dc;
+}
+
+
+
+

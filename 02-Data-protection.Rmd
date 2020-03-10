@@ -1,0 +1,98 @@
+# Data protection and privacy issues
+
+Protection privacy and confidentiality of survey respondents is a key concern and has to be considered carefully before preparing and launching a survey. This involves a clear understanding of the concepts involved, clarifying the legal and organizational requirements for you survey, and following certain standards for data management, storage and data reuse. Most of these issues have been extensively treated in the ACT Deliverable D1.3 Data Management Plan v2.0. We will briefly summarize the main points.
+
+## About privacy and confidentiality
+
+Although “privacy” and “confidentiality” are often used interchangeably the concepts should be distinguished [@EuropeanCommission2010].
+
+**Privacy** is a more fundamental concept and entails the a) control of information about oneself, b) control over access to oneself (both physical and mental), c) control over one's ability to make important life decisions.
+
+**Confidentiality** on the other hand is a more limited concept and concerns first and foremost the protection of personal information. “Confidentiality is a duty that arises when someone has been granted access to information that would otherwise be kept secret” [@EuropeanCommission2010, p. 79ff].
+
+Most importantly, privacy considerations limit the ways in which we acquire information, whereas confidentiality considerations deal with the protection of this acquired information.
+
+
+```{block, type="noteHighlight"}
+In concrete terms, the distinction between “privacy” and “confidentiality” implies to specify how privacy is protected during data collection, including the decisions to (not) participate, and how the collected data will be handled in a confidential manner after its recording.
+```
+
+
+For the GEAM survey, privacy implies to give respondents relative control over data entry (“what” and “when”), including the possibility to opt out and delete their data at any moment during the submission process. Confidentiality implies that result data is anonymized and stored in a secure way to prevent unauthorized access.
+
+
+## Ethical and Legal Framework
+
+The ACT project will be carried out in compliance with the [ethical standards](https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/ethics/h2020_hi_ethics-self-assess_en.pdf) of Horizon 2020  and the principles of research integrity contained in the [European Code of Conduct for Research Integrity](http://ec.europa.eu/research/participants/data/ref/h2020/other/hi/h2020-ethics_code-of-conduct_en.pdf), as well as any applicable international, EU and national law. Guiding principle for the work to be conducted is an ethic of respect for the person’s dignity and integrity, ensuring honesty and transparency towards research participants, protecting privacy and confidentiality, using appropriate techniques and methodologies (including for data collection and management), ensuring accuracy and impartiality when disseminating the results, and promoting democratic values, social justice and inclusivity.
+
+All ACT partners will follow those ethical principles and the requirements of the **European General Data Protection Regulation** (GDPR 2016/679), regardless of the country in which the project is carried out. According to the principles established by the EU GDPR (see Article 5), personal data shall be processed guaranteeing: lawfulness, fairness, and transparency; purpose limitation and data minimization; accuracy; storage limitation; integrity and confidentiality, and accountability.  
+
+According to the ethic requirements specified in deliverable D8.1 POPD Requirement No.1, ACT partners will keep on file a declaration on compliance or authorization for collecting and processing personal data if it is required under national law.
+
+If no declaration on compliance or authorization is required under the applicable national law, a statement from the designated Data Protection Officer that all personal data collection and processing will be carried out according to EU and national legislation will be kept on file.
+
+
+## Collecting Personal (Sensitive) Data
+
+The EU General Data Protection Regulation (GDPR Regulation 2016/679) draws a distinction between “personal data” and “personal sensitive data”.
+
+**Personal data means**: “any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person” (article 4.1).
+
+**Sensitive personal data** or special categories of personal data refer to information revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, data concerning health or data concerning a natural person's sex life or sexual orientation (article 9).
+
+The GEAM Core includes items inquiring about Sensitive Personal Information (e.g.: sexual orientation, health impairments or reporting discrimination associated with ethnicity) because these variables also constitute the main dimensions of social discrimination (Baumann, Egenberger, & Supik, 2018). From our perspective, it is important to address these sensitive issues in the GEAM Core because otherwise important discriminatory practices will remain invisible and cannot be addressed by adequate Gender Equality measures. 
+
+```{block, type="noteHighlight"}
+The FUOC is responsible for providing a technical secure solution to conduct online GEAM surveys. However, the survey content and handling of result data will be the responsibility of the survey administrator.
+```
+
+In the last instance it is the survey administrator who has to decide the adequate security settings for a specific survey instance taking into account the GEAM content, national legislation and organizational information needs and context(s).
+
+Questions and response options may need to be adapted according to an **organization’s or country’s legal requirements** where it affects monitoring practices, policies and the terms used to describe populations. Survey administrators, when editing questions and response options on protected characteristics, need to be aware of the rights and permissions in their country. For instance, they **need to know if permissions to collect data on protected characteristics such as sex, race and sexual orientation** differ or require an organization to re-phrase the language in the survey to be in line with regulatory standards.
+
+When editing questions or response options for regulatory reasons it is recommended that you use tried and tested, nationally accepted replacements (for example, the response options presented in a national census). This will increase the likelihood that other organizations in the same country have used similar questions and response options, producing a standardized approach and enabling organizations to benchmark themselves nationally.
+
+In order to make informed decisions regarding privacy protection and confidential treatment of result data, please make sure to read this document carefully, especially the section on Controlling data privacy and response tracking on page 28. You will also be required to sign the ANNEX 3 – Declaration of Data Protection and Confidentiality Agreement for Survey Administrators on page 55 before you can launch a survey (you can still edit and prepare your questionnaire without having signed the agreement with the FUOC. However, before collecting data, you will need to provide a signed copy).
+
+
+## Data Storage
+
+Once a survey has finished and the result data matrix has been downloaded from the LimeSurvey platform, we recommend the following easy steps to protect the confidentiality of the responses and prevent unauthorized access to your data.
+
+### Anonymization
+The GEAM Core does not contain any questions regarding direct personal identifiers such as social security number, names, email addresses or similar. Thus, the collected data is anonymous on a very basic level. LimeSurvey does not store any personal information with the survey results either. However, respondents might provide certain identifiers in open text questions such as organizational names or names of colleagues which unintentionally can identify their (and others) contributions.
+
+```{block, type="noteHighlight"}
+Please check the open text fields in your result data for any plain names and other possible identifiers before further processing your results. We recommend replacing these instances with custom codes or XXX-ing them out.
+```
+
+### Encrypting result data  
+A relatively easy but seldom applied measure to protect your data is to save the corresponding file(s) with a password. This works mainly when the results are downloaded as a Microsoft Excel file.  
+
+```{block, type="noteHighlight"}
+Before sharing the result data with the inner circle of colleagues, please password protect the file. Do not send the password together with the file (in the same email!).   
+```
+
+More sophisticated options are available such as using digital signatures and GPG encryption. GPG encryption technology is easily available on Linux operation systems. For Windows, see https://www.gpg4win.org/. The advantage of using advanced encryption techniques consists of protecting your data with a personal signature/password without limitations to share it with others. The architecture of public and private encryption keys enables you to encrypt data with a specific addressee in mind – and which then can be only decrypted by that particular person. This basically enables you to share protected data without having to worry about circulating a single password (used for encryption) among collaborators.  
+
+### Deletion 
+Note that when deleting data from a computer, the file is not actually erased but moved to a trash-bin and can be easily recuperated. This is especially important when working on a shared computer. When you download the result dataset, make sure others (including administrators) cannot access it at a later point in time.
+
+Data should be stored on your personal (Desktop) account (protected by your password). If you store it on an external (flash) drive, be sure to save it password protected in order to prevent unauthorized access in case of loss. Even better: encrypt your external (flash) drive; in case of loss, your data is still protected!
+
+
+## Disclosure Control
+
+Whereas “anonymization” can remove or replace identifiers from a dataset and thus prevent the identification of respondents, “quasi-identifiers” pose a different challenge. Quasi-identifiers refer to the variables used in the study and whose combination can lead to the re-identification of the respondent. For example, @GolleRevisitingUniquenessSimple2006 and @sweeney2000uniqueness show that 63% (or 87% respectively for older data) of the US population can be unambiguously identified by combining a 5-digit ZIP code, birth date and sex! The problem is that quasi-identifiers cannot be removed from the result data because they are required to perform useful analysis of the data.
+
+In case you plan to distribute your result dataset beyond the inner circle of persons involved with the collection and analysis of the GEAM Core, you need to carefully think about your quasi-identifiers. To prevent disclosure control, quasi-identifiers need to be examined in relation to the number of respondents in your data. A combination of professional category, age and gender might be enough to identify a person in a small research institute but insufficient in a dataset of several hundred or thousands of respondents.   
+  
+
+## Sharing Data
+
+Given the potential disclosure control issues, the ACT project does not foresee to publish any result data tables of GEAM Core questionnaires.
+
+```{block, type="noteWarning"}
+Survey administrators are advised at this point to only publish survey results in aggregated format.
+```
+

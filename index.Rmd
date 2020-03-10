@@ -1,0 +1,83 @@
+--- 
+title: "ACT Gender Equality Audit and Monitoring (GEAM)"
+author: "Jörg Müller, Sergi Yanes, Memory Malibha-Pinchbeck, Kevin Guyan"
+date: 'Last update: `r Sys.Date()`'
+site: "bookdown::bookdown_site"   
+output:
+  bookdown::gitbook:
+      css:  geam_style.css
+documentclass: book
+bibliography: references.bib
+description: The online manual version for the ACT Gender Equality Audit and Monitoring(GEAM) tool.
+link-citations: yes
+cover-image: "images/ACT_GEAM_Logo_2.png"
+biblio-style: apalike
+---
+
+
+
+
+# Welcome to the GEAM manual {-}
+
+
+```{r echo=FALSE, fig.align='center', out.width="70%"}
+knitr::include_graphics(path="images/ACT_GEAM_Logo_2.png")
+```
+
+This document provides hands-on guidance for the Gender Equality Audit and Monitoring (GEAM) tool which has been developed in the frame of the ACT project. See [https://www.act-on-gender.eu](https://www.act-on-gender.eu) for details. 
+
+To use the GEAM survey instrument please visit [https://geam.act-on-gender.eu](https://geam.act-on-gender.eu) and apply for an account. 
+
+This document is under active development and will be frequently updated during 2020-2021. Most recent version is found at https://act-on-gender.eu/geam-manual comments and contributions are welcome on Github (very soon). 
+
+
+<p>&nbsp;</p>
+***
+<p>&nbsp;</p>
+
+ 
+```{r echo=FALSE, fig.align='center', out.width="22%"}
+knitr::include_graphics(path="images/ACT_logo_300dpi_high.jpg")
+```
+
+<p>&nbsp;</p>
+ 
+```{r echo=FALSE, out.width="14%", fig.align="center", out.extra=ifelse(knitr::is_html_output(), "style='float:left; padding-right:12px;'", "")}
+knitr::include_graphics(path="images/EUflag.jpg")
+```
+This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 788204
+
+
+ 
+# Preface {-}
+
+This document provides hands-on guidance for the Gender Equality Audit and Monitoring (GEAM) tool. The GEAM is an integrated environment for carrying out survey-based gender equality audits in organizations (e.g. university or research performing organizations) or organizational units (faculty, departments). It aims to enable interested researchers as well as gender equality practitioners with little experience in the social sciences and survey methodology to construct high-quality questionnaires.
+
+The GEAM tool is based upon the Athena Survey of Science, Engineering and Technology (ASSET). It has been extended with new questions/topics and adapted to better fit the varying national contexts in Europe. The GEAM tool has been developed within the framework of the ACT project. Development was lead by Advance HE (UK), FUOC (Spain) and Notus (Spain) in collaboration with the Consortium.
+
+The following document provides concrete instructions to setup and customize the GEAM questionnaire. It is structured as a hands-on manual which will take interested researchers from the initial setup of the questionnaire, to its customization, deployment and analysis of results.
+
+The GEAM has been implemented with the LimeSurvey Community Edition survey platform. LimeSurvey is a software package for carrying out professional surveys and as such resembles similar environments such as [SurveyMonkey](https://www.surveymonkey.com) or [Zoho Survey](https://www.zoho.com/survey) to name just two popular ones. However, contrary to these commercial solutions, ACT has opted for a freely available open source survey platform, in order to comply with data protection requirements of our project, minimize long-term costs while being able to offer advanced survey features at no additional costs.
+
+Since the ACT GEAM tool is implemented with LimeSurvey CE hosted on the ACT server, the guidance document combines issues related to the content of the questionnaire with more technical issues of using the LimeSurvey platform.
+
+Main references to be consulted with this document:
+
+- The LimeSurvey Manual available online in different languages: https://manual.limesurvey.org/ Consult this document for technical issues with the LimeSurvey platform itself.
+
+- The documentation of the GEAM questionnaire modules and choice of measurement scales and related scientific literature https://zenodo.org/record/3476726
+
+- The database of GEAM modules hosted on GenPORT: https://www.genderportal.eu/database-ls-questionnaire-modules Contains questionnaires, question groups or questions used by other across Europe for gender equality audit and monitoring.
+
+ 
+## ACT Consortium {-}
+
+The ACT consortium consists of 17 partners: Fundació per a la Universitat Oberta de Catalunya (project coordinator, Spain), Portia (UK), NOTUS (Spain), Joanneum Research Forschungsgesellschaft MBH (Austria), Advance HE (formerly Equality Challenge Unit) (UK), Loughborough University (UK), Facultad Latinoamericana de Ciencias Sociales (Costa Rica1), Technische Universität Berlin (Germany), Karolinska Institutet (Sweden), Science Foundation Ireland (Ireland), Umweltbundesamt (Germany), Stiftung Deutsches Elektronen-Synchroton (Germany), Centre National de la Recherche Scientifique (France), Fundació Centre de Regulació Genòmica (Spain), Uniwersytet Jagiellonski (Poland), Znanstvenoraziskovalni Center Slovenske Akademije Znanosti in Umetnosti - ZRC SAZU(Slovenia), and Haskoli Islands (Iceland).
+
+## Terms of use {-}
+
+```{r echo=FALSE, fig.align="center", out.extra=ifelse(knitr::is_html_output(), "style='float:left; padding-right:12px; padding-bottom:100px; padding-top:10px;'", "")}
+knitr::include_graphics(path="images/ccommons88x31.png")
+```
+This work by the Jörg Müller, Sergi Yanes, Memory Malibha-Pinchbeck, Kevin Guyan and the ACT Consortium is licensed under [Attribution Non Commercial ShareAlike 4.0 International (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+

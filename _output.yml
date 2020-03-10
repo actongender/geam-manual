@@ -1,0 +1,12 @@
+bookdown::gitbook:
+  config:
+    toc:
+      collapse: section
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    download: ["pdf"]
+    search: yes 
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  keep_tex: yes

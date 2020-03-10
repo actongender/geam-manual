@@ -1,0 +1,20 @@
+# Annex I - Survey Checklist {-}
+
+Key tasks to be completed before the launch of a GEAM survey: 
+
+| Status | Task |
+|-|-------------|
+| | Provided a welcome and end message to your survey (Settings > Text elements) |
+| | Check that the title of the survey is correct. You can change the title of the survey under Text elements > Survey title.|
+|| Provided answer options for Question 4 on “Which best describes your post” (Structure >  WCJC004 > Edit answer options). This question is by default empty! |
+|| Selected the organizational reference category (Structure > VarOrgType > Edit default answer).|
+|| Data Policy (Settings > Data Policy): a) Revise and adapt all text elements marked in yellow, b) Provided name and email of the survey administrator, c) Selected one of the three available privacy settings and deleted the remaining two, d) Do this for all available languages |
+|| Carefully read, fill out and sign the “Declaration of Data Protection and Confidentially Agreement”. Only after we receive a signed copy of the Data Protection statement will the ownership of the survey be transferred to the survey administrator, including the access rights to “activate” the survey. |
+|| Provide or update your email address under Settings > General settings > “Admin email” and “Bounce email” if necessary |
+|| If you have made any modifications to the content of the survey: check if these modifications are consistent across all active languages |
+|| If you do not stick with the default “moderate” privacy settings you need to set the corresponding options for “strict” or “comfort” under “Settings > Participant Settings” and “Settings > Notifications & data management” | 
+|| Deactivate the display of question codes under Display > ???. Questions will be numbered automatically in order of appearance |
+|| Once your survey has finished, be sure to download all data before “deactivating” the survey. |
+
+
+

@@ -1,0 +1,28 @@
+# Understanding the GEAM
+
+
+The ACT Gender Equality Audit and Monitoring tool is a modular questionnaire framework which improves on previous monitoring tools such as the developed during the PLOTINA project, GENDER-NET, EGERA, or INTEGER. It furthermore builds on the ASSET 2016 Survey developed by AdvanceHE and offers a standardized monitoring tool to be utilized by higher education institutions across the EU and beyond.  
+
+## Thematic coverage and modules
+
+The GEAM tool includes several thematic question modules that cover different aspects related to gender equality in the work place:  
+
+- **Socio-demographics/ academic position** questions collect information on the following: date of birth, citizenship status(es), religious belief, sex and gender, sexual orientation, trans status or history, disability, highest qualification, parents’ highest qualifications and net household income.
+
+- **Working conditions** questions collect information on the following: position in organization, academic field, net salary, bonus, faculty/ department, contract type, career access, progression, barriers and development training, caring responsibilities, work role responsibilities, work and pay conditions and satisfaction levels, pregnancy support, work-family balance, leave support and workload.
+
+- **Stereotypes, prejudices and bias** questions collect information on unconscious bias, bias during recruitments, neosexism, atypical sexism, leadership.  Questions and response options in this section are not editable.
+
+- **Organizational culture and climate** questions collect information on representation of men and women, gender equality, differences in allocation of roles, promotions, treatment, perceptions of work environment and climate, recruitment factors, promotion factors, masculinity perceptions, team climate.
+
+- **Interpersonal behaviors and experiences** questions collect information on microaggressions, harassment, bullying and stalking, organizational workplace culture on bullying and harassment.
+
+
+## Adaptability and comparability
+
+The GEAM questionnaire is comprised of numerous tried and tested questions from the 2016 ASSET survey that show evidence of producing quality results. Additional questions and response options, where possible, use proven measurement scales that show reliable results for internal consistency such as a high Cronbach alpha mean. An overview of the scientific background literature for the chosen scales is availble in [@AldercotteACTGenderEquality2019]. 
+
+In order to maintain the quality of the collected data, we recommend to **not modify individual answer options**. At the same time, the GEAM Core needs to be adapted to the specific context of the target organization or organizational unit. The balance between comparability of data, data quality and the relevance of the questionnaire for a given organizational context is difficult to achieve.
+
+In section Adapting existing questions and items on page 25 we provide an overview which questions **need to be adapted**. If you need to make changes to other questions, we recommend to delete/add entire questions but **not to modify the wording of question texts or answer options**.
+

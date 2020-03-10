@@ -1,0 +1,162 @@
+# Launching A Survey 
+
+Launching the survey is relatively straight forward. It can either be activated by the “Activate this survey” button or through the “Publication and Access” settings which offers more fine tuned controls in terms of access and specifying start/end dates. 
+
+```{block, type="noteManual"}
+Corresponding section of the online manual: 
+https://manual.limesurvey.org/Publication_%26_access 
+```
+
+
+
+Recommended Publication & Access settings: 
+
+**Start/end dates:** You can program your launch and end date of the survey. 
+
+**List survey publicly:** “Off”. Surveys can be listed under the following URL: https://www.act-on-gender.eu/survey/ This is not recommended since you do not want to invite anonymous people (or robots) to submit data. 
+Set cookie to prevent repeated participation: “Off”. Only activate in case you have chosen “strict privacy settings” (see previous section). 
+
+**Use CAPTCHA for survey access:** “Off”. CAPTCHAS are used to prevent spamming and robots to access an active survey. CAPTCHAS are a good idea in case your survey is listed publicly or the access URL distributed through Twitter or other public forums. For the GEAM Core, this should usually not be the case; invitation to participate should be restricted to private forums and channels, including direct email messages. 
+
+**Use CAPTCHA for registration:** “Off”. Again, if the URL to your survey has been distributed in private forums, there is no need to use a CAPTCHA. This option also makes only sense if you use a participant table and need respondents to register with their name and email before they start filling out the survey.
+
+**Use CAPTCHA for save and load:** “Off”. No need if survey URL is not shared in any public forum. 
+The survey can be activated with the “Activate survey” button. Before the final launch, LimeSurvey offers a renewed control of the settings that cannot be modified once a survey is active. 
+
+```{block, type="noteHighlight"}
+Note that no changes to the content are possible once a survey has been launched, except changes to the question text, help texts, or question group descriptions, essentially those elements of the questionnaire which do not affect the variable structure. 
+```
+
+
+As shown in the following screenshot, LimeSurvey also displays the summary of your privacy settings which cannot be changed after the launch. 
+
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Final check before survey activation" }
+knitr::include_graphics(path="images/Activate_01.png")
+```
+
+After clicking “Save & activate survey” LimeSurvey displays a notification message, informing about the successful creation of the result table which stores respondents data. 
+
+Depending on the selected privacy settings (“strict” or “moderate”), LimeSurvey will also offers the option to switch to “closed access mode” and create a “participant table” to register survey respondents name and email. 
+
+You should choose “No, thanks” - assuming that you have read the section on  Controlling data privacy and response tracking on page 31. 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Notification of successful activation of survey" }
+knitr::include_graphics(path="images/ActivatedNotification_01.png")
+```
+
+## URL address of survey 
+Your survey URL is available in the “Settings > Overview” section. You can copy/paste this URL address to distribute and invite survey participants in case no participant table has been activated. 
+
+## Tracking responses 
+Several options are available to track responses while your survey is active. A first overview regarding the “Partial”, “Full”, “Total” responses is available from the survey listing after logging onto the system. 
+
+A more detailed view is available form the “Responses & Statistics” section. 
+
+```{block, type="noteManual"}
+Corresponding online manual section: 
+https://manual.limesurvey.org/Responses 
+```
+
+An overview of all variables (columns) is displayed (see next Illustration) with their corresponding data entries. Each row represents one respondent. The column “Lastpage” indicates the last visited page before the respondent left the survey. 
+
+```{block, type="noteHighlight"}
+Ordering the response table by “Lastpage” gives a quick overview of problematic sections/pages where many respondents “drop-out”. 
+```
+
+`In case you use a multi-language survey, the column “startlanguage” indicates which language version was used by the given respondent.  
+
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Example of active survey response table" }
+knitr::include_graphics(path="images/ResponseTrack_01.png")
+```
+
+
+## Statistics 
+LimeSurvey can generate some simple descriptive statistics while your survey is active or after it has been deactivated. 
+Corresponding online manual section: https://manual.limesurvey.org/Statistics 
+
+## Sending Reminders
+Most surveys requires several waves of reminders to be send. If your survey has been launched without a “participant table”, reminders need to be send via the available communication channels (email lists, private forums, etc.). Reminders under the “strict” or “moderate” security settings (see page 31) can’t be personalized. Each wave of reminder will be send to all potential participants, irrespective if they have answered your survey already or not. 
+
+In case a “participant table” is used, you can create personalized wave of reminders – with the advantage to reach only those potential respondents who have not replied so far. Personalized reminders via the LimeSurvey internal notification system increment the response rate of your survey notably. 
+
+Corresponding online manual section: https://manual.limesurvey.org/Survey_participants#Invitations_.26_reminders 
+
+## Stopping, relaunching, finalizing survey 
+After a survey has been activated, you can manually “Stop this survey” at any time. In case an end date has been entered, the survey will expire automatically at the given deadline. 
+
+A survey can be “expired” or “deactivated”. Understanding the difference is crucial and has important implications for accessing result data! 
+
+**Expire a survey:** is synonymous to the end date of your survey. It simply will not be reachable for respondents. 
+
+```{block, type="noteWarning"}
+Expire your survey, then download the results!
+```
+
+An expired survey can be relaunched, for example in case you decide to extend the deadline for submissions. Just enter a new end date. 
+
+**Deactivate a survey:** when deactivating a survey you will reset it into “editable” mode, i.e. all content, including questions and answer items can be modified, deleted or added. It resets and “empties” the survey into the pre-launch state. 
+
+```{block, type="noteWarning"}
+Always, always, always download the results of your survey before it is deactivated!  
+```
+
+A deactivated survey cannot be relaunched, or rather, this will create a brand-new response table. All previous responses are lost! Strictly speaking they are not lost, but you need to contact the system administrator to recover the data. In such a case, you need to remember the ID of your survey shown in parenthesis “Stop this survey (XXXXX)”  in in the next Illustration. 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="'Expire' your survey to download results! Then deactivate." }
+knitr::include_graphics(path="images/StopSurvey_01.png")
+```
+
+
+## Exporting results 
+You can download (or export) results while a survey is active or after it has been “expired”. You cannot download results in case it has been “deactivated”. 
+
+You can export results under “Responses > Responses & Statistics > Export > Export Responses”. 
+
+```{block, type="noteManual"}
+Corresponding section online manual: https://manual.limesurvey.org/Export_responses 
+```
+
+Several export formats are available, including SPSS, R, CSV or Excel. In case you plan to analyze the results yourself without a professional statistical software such as SPSS your best choice is probably Microsoft Excel1. In case you want to use the descriptive templates/reporting provided by the ACT project, you need to export the R syntax and R data file. 
+
+### Microsoft Excel
+When exporting to Microsoft Excel file, make sure to select the following settings: 
+
+**Question Code & Question Text.** “Active”. Export both the question internal code as well as the plain text. Makes it easier to understand the data and responses without going back and forth to the code book of the questionnaire! 
+
+**Strip HTML code:** “On”. Removes HTML code in question texts and answer options. 
+
+**Export language:** In case your questionnaire was available in several languages, this option indicates in which language the answer options and question texts will be shown in the excel file. The text entered into open text boxes remains unaffected by this choice.  
+
+You can furthermore restrict the range of respondents and/or columns (variables) to be exported.
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Export survey results to MS Excel" }
+knitr::include_graphics(path="images/ExportSettings_Excel.png")
+```
+
+### R syntax and data files
+In order to use the provide reporting templates for the GEAM Core, you need to export two files: R syntax file and R data file. For both files, set “Export questions as” to “Question code” and “CSV field separator: 'Tab'” as indicated in the following illustration: 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Export survey results to R Data" }
+knitr::include_graphics(path="images/ExportSettings_RData.png")
+```
+
+## Deleting a survey (online) 
+After a survey is finished and the result data has been downloaded, we strongly recommend deleting the survey from the ACT LimeSurvey platform. In the unlikely event the survey platform is being compromised, there is no danger of exposing any respondent data. Please consider the following steps: 
+
+1. Export your survey result data if you haven’t do so. 
+2. If you have used a “participant table” for distributing and remining your participants, export it as well. This will be important in order to comply with potential data deletion requests by individual respondent as stipulated by the GDPR policy. 
+3. Consider exporting and sharing your questionnaire structure – especially in case you have made considerable modifications. Your questionnaire might provide helpful for others working in similar institutional or regional/country context. 
+4. Delete your survey under Tools > Delete Survey. 
+
+```{block, type="noteManual"}
+Corresponding link to the online manual 
+https://manual.limesurvey.org/Delete_survey 
+```
+
+System administrators check regularly for expired surveys. In case a survey has not been deleted one month after its finalization, we will inform the survey administrator about the imminent deletion. If we do not hear back from the survey admin within two weeks time, the survey will be deleted. 
+
+
+
+
