@@ -28,7 +28,7 @@ This document provides hands-on guidance for the Gender Equality Audit and Monit
 
 To use the GEAM survey instrument please visit [https://geam.act-on-gender.eu](https://geam.act-on-gender.eu) and apply for an account. 
 
-This document is under active development and will be frequently updated during 2020-2021. Most recent version is found at https://act-on-gender.eu/geam-manual comments and contributions are welcome on Github (very soon). 
+This document is under active development and will be frequently updated during 2020-2021. Most recent version is found at https://act-on-gender.eu/geam-manual comments and contributions are welcome on  [Github](https://github.com/actongender/geam-manual).
 
 
 <p>&nbsp;</p>
