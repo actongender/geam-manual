@@ -45,7 +45,7 @@ knitr::include_graphics(path="images/ACT_logo_300dpi_high.jpg")
 ```{r echo=FALSE, out.width="14%", fig.align="center", out.extra=ifelse(knitr::is_html_output(), "style='float:left; padding-right:12px;'", "")}
 knitr::include_graphics(path="images/EUflag.jpg")
 ```
-This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 788204
+This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 788204.
 
 
  
