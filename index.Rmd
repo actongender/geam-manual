@@ -2,10 +2,13 @@
 title: "ACT Gender Equality Audit and Monitoring (GEAM)"
 author: "Jörg Müller, Sergi Yanes, Memory Malibha-Pinchbeck, Kevin Guyan"
 date: 'Last update: `r Sys.Date()`'
+github-repo: "actongender/geam-manual"
 site: "bookdown::bookdown_site"   
 output:
   bookdown::gitbook:
       css:  geam_style.css
+      split_by: chapter
+      split_bib: yes
 documentclass: book
 bibliography: references.bib
 description: The online manual version for the ACT Gender Equality Audit and Monitoring(GEAM) tool.
