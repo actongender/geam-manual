@@ -1,0 +1,41 @@
+\usepackage{booktabs}
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{mdframed} 
+
+
+\definecolor{light-gray}{gray}{0.95}
+\definecolor{color-highlight}{HTML}{f6a500}
+\definecolor{color-recommend}{HTML}{acc90d}
+\definecolor{color-warning}{HTML}{f08eb9}
+\definecolor{color-manual}{HTML}{0863c8}
+
+\newmdenv[linewidth=10pt,
+          backgroundcolor=light-gray,
+          skipabove=2em,
+          skipbelow=1em, 
+          innertopmargin=2em, 
+          innerbottommargin=2em,
+          topline=false,
+          bottomline=false, 
+          rightline=false,
+          roundcorner=5pt,
+          leftmargin=4em,
+          rightmargin=10pt,
+          innerleftmargin=15pt
+          frametitle=Infobox]{infobox}
+          
+\newenvironment{noteHighlight}
+  {\begin{infobox}[linecolor=color-highlight]}  %start environment
+  {\end{infobox}}                         %close environment
+\newenvironment{noteRecommend}
+  {\begin{infobox}[linecolor=color-recommend]}  
+  {\end{infobox}}  
+\newenvironment{noteWarning}
+  {\begin{infobox}[linecolor=color-warning]}  
+  {\end{infobox}}                        
+\newenvironment{noteManual}
+  {\begin{infobox}[linecolor=color-manual]}  
+  {\end{infobox}}  
+
+

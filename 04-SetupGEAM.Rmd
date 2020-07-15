@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Setting up a GEAM Questionnaire
 
 The GEAM questionnaire is hosted and managed by UOC, coordinator of the ACT project. The technical features of the LimeSurvey CE edition requires to centralize the management of accounts and creation of questionnaires. 
