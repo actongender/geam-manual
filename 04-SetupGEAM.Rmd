@@ -1,11 +1,6 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
 # Setting up a GEAM Questionnaire
 
-The GEAM questionnaire is hosted and managed by UOC, coordinator of the ACT project. The technical features of the LimeSurvey CE edition requires to centralize the management of accounts and creation of questionnaires. 
+The GEAM questionnaire is hosted and managed by the UOC, coordinator of the ACT project. The technical features of the LimeSurvey CE edition requires to centralize the management of accounts and creation of questionnaires. 
 
 ## Request an account / copy of the GEAM questionnaire
 
@@ -30,24 +25,15 @@ Basically, you have all rights concerning your questionnaire and survey but no r
 ## Taking responsibility (for data)
 Once your account has been created you can start editing your copy of the GEAM Core. You can add and delete sections and adapt the data policy text. Since the survey administrator will be responsible for adapting the GEAM Core to the specific organizational context, it will be the survey administrator who is responsible for the questionnaire content and result data. 
 
-You can only launch the survey – and thus start to collect data – once you have signed and returned the corresponding “Declaration of Data Protection and Confidentiality” Statement provided in Annex 3 of this guide. 
+You can only launch the survey – and thus start to collect data – once you have signed and returned the corresponding [Annex III - Declaration of Data Protection and Confidentiality Agreement](#annex-iii-declaration-of-data-protection). 
 
 
 ## Adjusting global questionnaire settings
 The GEAM Core as well as any other questionnaire requires adjusting of global settings. 
 
-```{block, type="noteManual"}
-
-Corresponding section online manual: 
-
-https://manual.limesurvey.org/General_settings#Additional_languages 
-
-```
-
-
 
 ### Language(s)  
-The GEAM Core questionnaire is available in different languages. Currently, the GEAM Core is available in English, Polish, Lithuanian, Spanish and German. Other languages are forthcoming.  
+The GEAM Core questionnaire is available in different languages, including in English, Polish, Lithuanian, Spanish and German. Other languages are forthcoming.  
 
 All elements of the GEAM Core are translated to the listed languages, including data policy texts, general text messages, questions and response items. 
 
@@ -65,16 +51,25 @@ In case you want to **add an additional language**, please be aware that this re
 2. Save your General Survey Settings. 
 3. Then translate all elements of the questionnaire by clicking “Tools > Quick translation tool”. 
 
+```{block, type="noteManual"}
+
+Corresponding section online manual: 
+
+https://manual.limesurvey.org/General_settings#Additional_languages 
+
+```
+
+
 Survey respondents can choose any of the available languages before starting to respond to the questionnaire or even during their response process. 
 
 ```{block, type="noteHighlight"}
-Any adaptations or editing you undertake in your questionnaire needs to be **mirrored across all languages** you plan to use. If you are sure that certain languages do not apply to your context, simply delete it.  
+Any adaptations or editing you undertake in your questionnaire needs to be **mirrored across all languages** you plan to use. 
 ```
 
 
 
 ### Navigation 
-LimeSurvey offers different options for presenting and navigating an active survey. Being an online environment, the navigation (and responses) can be organized by sub-sections or pages. For relatively short questionnaires, all questions can be presented in one-go, on a single page. For larger questionnaires, we recommend to organize user responses by sub-dividing the questionnaire in different thematic sections. The GEAM Core, given that it is a fairly long questionnaire, is sub-divided in 9 thematic sections where questions and response items for each section are presented on a single “page”.
+LimeSurvey offers different options for navigating an active survey. Being an online environment, the navigation (and responses) can be organized by sub-sections or pages. For relatively short questionnaires, all questions can be presented in one-go, on a single page. For larger questionnaires, we recommend to organize user responses by sub-dividing the questionnaire in different thematic sections (this is the default setting). The GEAM Core is sub-divided in 9 thematic sections where questions and response items for each section are presented on a single “page”.
 
 “Page” refers here to a webpage, i.e. users can respond to all questions of a given section without having to make another call to the web server. Depending on the specific questionnaire section, this still can involve many questions and answer options that would not fit onto a standard DIN A4 printed page. 
 
@@ -82,21 +77,21 @@ Under “General Settings”, you can select how survey respondents may navigate
 
 ### Presentation
 
-Under “Settings > Presentation” user can control the display of the the questionnaire. Most importantly, the display of **questions codes** can be turned off.  
+Under “Settings > Presentation” user can control the display of the the questionnaire. Most importantly, the display of **questions codes** can be turned off. 
+
+**Show question number and/or code**: “Show question number only”. This will hide the question code (e.g. WCWI006 used for internal identification of question) and leaves only the automatic question number visible, starting at 1.  
 
 ```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Presentation & navigation settings" }
 knitr::include_graphics(path="images/PresentationNavi_01.png")
 ```
 
-The most important adjustments concern: 
+Other important adjustments concern: 
 
 **Show question index/allow jumping:** “Full”. This means a “Table of Contents” for the entire questionnaire will be displayed, enabling respondents to jump between the different sections of the survey without progressing in a linear fashion. This might be helpful if users want to jump to the last section on “Socio-demographics” without necessarily filling in certain sections before.
 
 It might be a disadvantage of you need certain information from an “earlier” section for routing and making decisions regarding a “later” section in your questionnaire. Providing a questionnaire index also allows users to explore the different sections before answering any. “Incremental” means that the overall presentation of the questionnaire is linear (you can't jump ahead), but that users can navigate to earlier sections backwards in a non-linear way. This might be useful if you want to allow users to jump to the first page from the last without click the “Back” button on each page one-page a time. 
 
 **Show group name and/or group description**: “Show both”. This refers to the descriptions the GEAM Core provides for each of the 9 sections. It helps respondents to contextualize the questions of each section. In some cases, e.g. “Behavior - Bullying, Harassment, Microagression”, the description contains definitions of each of the terms used. Should to set to "Show both". 
-
-**Show question number and/or code**: “Show question number only”. This will hide the question code (e.g. WCWI006 used for internal identification of question) and leaves only the automatic question number visible, starting at 1.   
 
 **Show progress bar**: “On”. Informs respondents about the progress made, i.e. how many questions are left.
 
@@ -149,7 +144,7 @@ In the above example, the organizational reference unit is "department". the "PL
 In case the desired organizational unit of the target population is not listed, a new entry can be aggregated by “Edit answer options”. Note that new answer options need to be provided for all activated languages. 
 
 
-## Adapting questionnaire content
+## Adapting questionnaire content {#adapting-content}
 After a new GEAM Core has been created, some content needs to be adapted. 
 
 ```{block, type="noteHighlight"}
@@ -158,7 +153,7 @@ Avoid changing question codes. Codes are used for generating automatically the d
 
 
 ### Text messages
-Adapting the GEAM Core questionnaire involves writing a specific welcome and ending message for the survey. It is an opportunity to introduce the questionnaire to your participants, explain its purpose, to whom it is addressed, why it is important to participate and what will happen to the results. 
+Adapting the GEAM questionnaire involves writing a specific welcome and ending message for the survey. It is an opportunity to introduce the questionnaire to your participants, explain its purpose, to whom it is addressed, why it is important to participate and what will happen to the results. 
 
 ```{block, type="noteManual"}
 
@@ -168,10 +163,9 @@ https://manual.limesurvey.org/Text_elements
 
 ```
 
+For instructions how to edit the text fields using the build-in rich-text editor, see [Annex II - LimeSurvey Interface](#ls-interface). 
 
-For editing text fields with a rich-text editor, see ANNEX 5 – Using LimeSurvey Editor  on page 66. 
-
-LimeSurvey provides specific input fields that need to be filled in. Under “Settings > Text Elements”: 
+Under “Settings > Text Elements” please fill out:  
 
 **Survey title:** A brief title of the survey; could include reference to your organizational unit. 
 
@@ -189,7 +183,7 @@ LimeSurvey provides specific input fields that need to be filled in. Under “Se
 
 **End URL:** If you want to redirect people to a different page after they have finished the survey (e.g. the home page an equality unit), please enter the corresponding URL in this field.
 
-### Data policy
+### Data policy {#data-policy}
 LimeSurvey offers a dedicated section to specify the “Data Policy”. This includes the data and privacy protection text as well as how this it will be displayed to users before they can fill in the questionnaire. 
 
 The Data Policy is part of the home page of the survey. It will be displayed together with the “Survey title” and “Welcome message” on the landing page of an active survey. User need to click the “checkbox” indicating their agreement to the data policy in order to start the survey. Clicking on “Show policy” will open the data policy text as shown below. Note the highlighted yellow section(s) which need to be edited/replaced by the survey administrator (see below)!
@@ -200,17 +194,21 @@ knitr::include_graphics(path="images/DataPolicy_01.png")
 
 You need to **adapt/edit the default Data Policy text** provided by the GEAM Core. This includes: 
 - provision of a valid email address and full name for the survey administrator who will be responsible for the survey and the resulting data. 
-- Choose one among the three available data privacy sections, “strict”, “moderate”, or “comfort”. For the detailed explanation of each of these settings see Controlling data privacy and response tracking on page 31. 
+- Choose one among the three available data privacy sections, “strict”, “moderate”, or “comfort”. For the detailed explanation of each of these settings see [Controlling data privacy and response tracking]({#launch-control-privacy}). 
 
 Be sure to adapt the data policy settings for all available languages of your survey! 
 
-For editing text fields with a rich-text editor, see ANNEX 5 – Using LimeSurvey Editor on page 66. 
 
 ### Adapting existing questions and items
-The GEAM Core questionnaire contains 60 questions. Some socio-demographic questions and response options can be adapted to collect information that provides more contextually meaningful and nationally comparable results for organizations. This can be done by providing a list of the categories used for monitoring purposes in the organization’s country. 
-For example, response options for the question 50 (SDEM002) majority/minority ethnic group currently only contains four answer options: (1) “Majority”, (2) “Minority” apart from (3) “Unsure” and (4) “Prefer not to say”. The answer options can be edited in order to reflect more fine-grained categories which should match the nationalities and groups in each country. The response options provided in the survey based of a national census are recommended.
+The GEAM contains 60+ questions. Some socio-demographic questions and response options can be adapted to collect information that provides more contextually meaningful and nationally comparable results. 
 
-The following table provides an overview which questions need and can be edited. Please note, that Q4 has currently no answer options. Survey administrators need to provide answer options regarding respondents current post before launching the survey. 
+For example, response options for the question "50 (SDEM002) majority/minority ethnic group" currently only contains four answer options: (1) “Majority”, (2) “Minority” apart from (3) “Unsure” and (4) “Prefer not to say”. The answer options can be edited in order to reflect more fine-grained categories which should match the nationalities and groups in each country. The response options provided in the survey based of a national census are recommended.
+
+```{block, type="noteHighlight"}
+Please note, that question **WCJC004** has currently no answer options. Survey administrators need to **provide answer options** regarding respondents current post before launching the survey. 
+```
+
+The following questions should be revised and adapted to the organizational context: 
 
 
 |    |  Code   | Question Text                               | Editable/adaptable |
@@ -226,7 +224,7 @@ The following table provides an overview which questions need and can be edited.
 | Q50 | SDEM002 | Do you currently perceive yourself to be part of a majority or minority ethnic group? | Editable
 
 
-Other questions and response options cannot be changed. These response options allow for organizational, national and transnational standardization and comparisons.  Questions include year if birth, marital or partnership status, gender, sex and current role position.
+Other questions and response options cannot be changed. These response options allow for organizational, national and transnational standardization and comparisons. This is especiallyl important for socio-demographic questions such as year if birth, marital or partnership status, gender, sex and current role position.
 
 ### Adding or deleting questions or question groups
 You can add new question groups and questions. The GEAM Core is organized according to 9 question groups or sections. All questions contained within a question groups will be displayed in a single page; users can navigate between questions group with the “Next” or “Back” buttons – which will save all data/fields. 
@@ -239,7 +237,7 @@ https://manual.limesurvey.org/Questions_-_introduction
 ```
 
 
-In case new questions or question blocks are added, translation issues need to be considered. If the questionnaire is available in English and French for example, and a  new question is added in French, the English edition will display the French entries as long as they are not translated. 
+In case new questions or question blocks are added, **translation issues** need to be considered. If the questionnaire is available in English and French for example, and a  new question is added in French, the English edition will display the French entries as long as they are not translated. 
 
 
 ```{block, type="noteRecommend"}
@@ -252,9 +250,14 @@ As in most survey platforms, LimeSurvey allows you to indicate which questions a
 
 Making certain questions mandatory assures that your results meet a certain minimal threshold in terms of data quality and opportunities for analysis. For example, the results of the GEAM Core will be useless if users are not obliged to fill out basic socio-demographic data such as “gender” and “age”. Without this socio-demographic variables you will not be able to analyze how working conditions or organizational culture and climate or any other construct differ by gender!
 
-Currently, the following list of questions are mandatory: 
+You can toggle if a question is mandatory while editing it. 
 
-**TO COMPLETE**
+"On" - Question will be enforced, respondents can't continue withour responding
+"Soft" - Warning will be displayed before moving on, but respondents can continue without responding
+"Off" - No warning displayed, respondents can move on without noticing that response is missing. 
 
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Mandatory settings" }
+knitr::include_graphics(path="images/Mandatory_01.png")
+```
 
 

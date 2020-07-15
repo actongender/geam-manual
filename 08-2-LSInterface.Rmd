@@ -1,6 +1,14 @@
-# Annex II - Use LimeSurvey Editor {-}
+# Annex II Basics of LimeSurvey Interface {-}
+
+## Basic structure of the interface
+
+For a quick start regarding the LimeSurvey platform and GEAM Questionnaire, you can watch the video [GEAM First Steps](https://geam.act-on-gender.eu/content/documentation)
+
+Global features of the questionnaire such as its title or welcome message are controlled via “Settings” while individual question content can be edited via the “Structure” panel. 
 
 
+
+## LimeSurvey Text Editor {#ls-editor}
 LimeSurvey has a build-in text editor. By default, question texts or the data policy text is shown in “plain text mode” which might be confusing since it contains HTML formatting tags such as “\<p\>”, “\<strong\>.. \<\/strong\>”. 
 
 By clicking on the lateral pencil-icon, a rich-text editor opens in a new window in order to edit any text without worrying about its formatting.

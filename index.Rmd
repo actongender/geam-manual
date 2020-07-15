@@ -14,6 +14,7 @@ description: The online manual version for the ACT Gender Equality Audit and Mon
 link-citations: yes
 cover-image: "images/ACT_GEAM_Logo_2.png"
 biblio-style: apalike
+linkcolor: blue
 ---
 
 
@@ -70,6 +71,12 @@ Main references to be consulted with this document:
 - The documentation of the GEAM questionnaire modules and choice of measurement scales and related scientific literature https://zenodo.org/record/3476726
 
 - The database of GEAM modules hosted on GenPORT: https://www.genderportal.eu/database-ls-questionnaire-modules Contains questionnaires, question groups or questions used by other across Europe for gender equality audit and monitoring.
+
+## Visual Quckstart {-}
+
+For a general introduction to the GEAM see this video. 
+
+For basic notions of how to edit and adapt the GEAM questionnaire, see video [GEAM First Steps](https://geam.act-on-gender.eu/content/documentation)
 
  
 ## ACT Consortium {-}

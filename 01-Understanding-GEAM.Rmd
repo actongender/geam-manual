@@ -20,9 +20,9 @@ The GEAM tool includes several thematic question modules that cover different as
 
 ## Adaptability and comparability
 
-The GEAM questionnaire is comprised of numerous tried and tested questions from the 2016 ASSET survey that show evidence of producing quality results. Additional questions and response options, where possible, use proven measurement scales that show reliable results for internal consistency such as a high Cronbach alpha mean. An overview of the scientific background literature for the chosen scales is availble in [@AldercotteACTGenderEquality2019]. 
+The GEAM questionnaire comprises numerous tried and tested questions from the 2016 ASSET survey that show evidence of producing quality results. Additional questions and response options, where possible, use proven measurement scales that show reliable results for internal consistency such as a high Cronbach alpha mean. An overview of the scientific background literature for the chosen scales is availble in [@AldercotteACTGenderEquality2019]. 
 
-In order to maintain the quality of the collected data, we recommend to **not modify individual answer options**. At the same time, the GEAM Core needs to be adapted to the specific context of the target organization or organizational unit. The balance between comparability of data, data quality and the relevance of the questionnaire for a given organizational context is difficult to achieve.
+In order to maintain the quality of the collected data, we recommend to **not modify individual answer options**. At the same time, the GEAM Core needs to be adapted to the specific context of the target organization or organizational unit. The balance between comparability of data, data quality and the relevance of the questionnaire for a given organizational context is not always easy to achieve.
 
-In section Adapting existing questions and items on page 25 we provide an overview which questions **need to be adapted**. If you need to make changes to other questions, we recommend to delete/add entire questions but **not to modify the wording of question texts or answer options**.
+In section [Adapting questionnaire content](#adapting-content) we provide an overview which questions **need to be adapted**. If you need to make changes to other questions, we recommend to delete/add entire questions but **not to modify the wording of question texts or answer options**.
 

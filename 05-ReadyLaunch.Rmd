@@ -8,7 +8,7 @@ Before launching a survey, survey administrators need to revise the privacy sett
 ```
 
 
-## Controlling data privacy and response tracking
+## Controlling data privacy and response tracking {#launch-control-privacy}
 Generally speaking responses are “anonymous” if one cannot deduce the identity of the person who has contributed a submission to the questionnaire. 
 
 LimeSurvey offers different options to store and track information about survey participants. Adjusting the level of “anonymization” has implications not only for the protection of personal data in the unlikely event of a data breach but also for managing invitations, sending reminders, the possibility to stop and resume a submission or for canceling a submission and deleting the associated data. 
