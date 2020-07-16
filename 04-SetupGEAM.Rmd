@@ -163,8 +163,6 @@ https://manual.limesurvey.org/Text_elements
 
 ```
 
-For instructions how to edit the text fields using the build-in rich-text editor, see [Annex II - LimeSurvey Interface](#ls-interface). 
-
 Under “Settings > Text Elements” please fill out:  
 
 **Survey title:** A brief title of the survey; could include reference to your organizational unit. 

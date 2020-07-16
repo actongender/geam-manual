@@ -60,7 +60,7 @@ The GEAM tool is based upon the Athena Survey of Science, Engineering and Techno
 
 The following document provides concrete instructions to setup and customize the GEAM questionnaire. It is structured as a hands-on manual which will take interested researchers from the initial setup of the questionnaire, to its customization, deployment and analysis of results.
 
-The GEAM has been implemented with the LimeSurvey Community Edition survey platform. LimeSurvey is a software package for carrying out professional surveys and as such resembles similar environments such as [SurveyMonkey](https://www.surveymonkey.com) or [Zoho Survey](https://www.zoho.com/survey) to name just two popular ones. However, contrary to these commercial solutions, ACT has opted for a freely available open source survey platform, in order to comply with data protection requirements of our project, minimize long-term costs while being able to offer advanced survey features at no additional costs.
+The GEAM has been implemented with the LimeSurvey Community Edition survey platform. LimeSurvey is a software package for carrying out professional surveys and as such resembles similar environments such as SurveyMonkey or Zoho Survey to name just two popular ones. However, contrary to these commercial solutions, ACT has opted for a freely available open source survey platform, in order to comply with data protection requirements of our project, minimize long-term costs while being able to offer advanced survey features at no additional costs.
 
 Since the ACT GEAM tool is implemented with LimeSurvey CE hosted on the ACT server, the guidance document combines issues related to the content of the questionnaire with more technical issues of using the LimeSurvey platform.
 
@@ -71,12 +71,6 @@ Main references to be consulted with this document:
 - The documentation of the GEAM questionnaire modules and choice of measurement scales and related scientific literature https://zenodo.org/record/3476726
 
 - The database of GEAM modules hosted on GenPORT: https://www.genderportal.eu/database-ls-questionnaire-modules Contains questionnaires, question groups or questions used by other across Europe for gender equality audit and monitoring.
-
-## Visual Quckstart {-}
-
-For a general introduction to the GEAM see this video. 
-
-For basic notions of how to edit and adapt the GEAM questionnaire, see video [GEAM First Steps](https://geam.act-on-gender.eu/content/documentation)
 
  
 ## ACT Consortium {-}

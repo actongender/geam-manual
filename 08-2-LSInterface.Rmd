@@ -1,21 +1,36 @@
 # Annex II Basics of LimeSurvey Interface {-}
 
-## Basic structure of the interface
+## Basic structure of the interface {-}
 
-For a quick start regarding the LimeSurvey platform and GEAM Questionnaire, you can watch the video [GEAM First Steps](https://geam.act-on-gender.eu/content/documentation)
+For a quick start regarding the LimeSurvey platform and GEAM Questionnaire, you can watch the video [GEAM First Steps](https://vimeo.com/422763740)
 
 Global features of the questionnaire such as its title or welcome message are controlled via “Settings” while individual question content can be edited via the “Structure” panel. 
 
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Global Survey Settings." }
+knitr::include_graphics(path="images/survey-settings.png")
+```
 
+<p>&nbsp;</p>
 
-## LimeSurvey Text Editor {#ls-editor}
-LimeSurvey has a build-in text editor. By default, question texts or the data policy text is shown in “plain text mode” which might be confusing since it contains HTML formatting tags such as “\<p\>”, “\<strong\>.. \<\/strong\>”. 
+Individual questions can be edited under the "Structure" view: 
 
-By clicking on the lateral pencil-icon, a rich-text editor opens in a new window in order to edit any text without worrying about its formatting.
-
-```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Opening the LimeSurvey rich-text editor." }
-knitr::include_graphics(path="images/TextEditor.png")
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Structure Settings." }
+knitr::include_graphics(path="images/structure-section-lock.png")
 ```
 
 
-When saving the edited content, it is important to save first the contexts of the rich-text editor by clicking on the small save/disk-icon inside the small window, close the editor-window and then save the contexts of the item with the “save” button of the main window. 
+Note the "locked" symbole in the illustration above. Changing the order of questions or question groups requires to "unlock" the left column. 
+
+## "Question Editor" versus "Question Overview" {-}
+
+When clicking a specific question in the left "Structure" column, it becomes editable in the main view. By default, the "Question Editor" View becomes active to change question text or answer options. 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Question Editor" }
+knitr::include_graphics(path="images/question-editor.png")
+```
+
+In contrast, the "Question Overiew" provides access to the setting conditional logics, default answer, export options or for deleting the question. Note the change in the top button rows in the Illustration below. 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Question Editor" }
+knitr::include_graphics(path="images/question-overview.png")
+```
