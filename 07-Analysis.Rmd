@@ -2,15 +2,145 @@
 
 The GEAM Core collects both quantitative and qualitative information (in the form of open text boxes). We sketch the basic approaches to analyzing both types of data. 
 
-As part of the overall GEAM tool, ACT provides a template for generating an overview of descriptive results of your survey data. The template is based on R and Rmarkdown and hosted on the projects Github account (LINK). 
+As part of the overall GEAM tool, ACT provides a template for **generating automatically** an overview of descriptive results of your survey data. The template is based on R and Rmarkdown and hosted on the projects [Github](https://github.com/actongender/geam-report). 
 
-If your survey is based upon the GEAM Core questions, using the template script eases the task of examining your data considerably. For each questions, the script will generate frequency tables as well as corresponding graphics on the fly. It also provides an overview of missing answers/cases. 
+If your survey is based upon the GEAM Core questions, using the template script eases the task of examining your data considerably. For each question, the script will **generate frequency tables** as well as corresponding **graphics on the fly**. It also provides an overview of missing answers/cases. 
 
 ```{block, type="noteHighlight"}
 Note, that the template report/script does not cover any additional questions that you may have added. 
 ```
 
-In order to use the script, you need to be familiar with R and Rstudio. In case you are not familiar with R, you can contact either FUOC or AdvanceHE and we will generate the report for you. You need to export the R syntax file and R data file exactly as indicated under R syntax and data files on page 43. 
+In order to use the script, you need to be familiar with R and Rstudio. In case you are not familiar with R, you can contact either FUOC or AdvanceHE and we will generate the report for you. You need to export the R syntax file and R data file exactly as indicated in the previous [section](#export-to-R). 
+
+
+## Analyzing Quantitative Data
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  echo = FALSE, 
+  message = FALSE, 
+  warning = FALSE,
+  comment = "#>"
+)
+
+
+library(tidyverse)
+library(sjPlot)
+library(sjmisc)
+library(sjlabelled)
+library(RColorBrewer)
+
+source("util/util.fn.R")
+
+load("data/survey_477463_df.rdata")
+
+pal2 <-  brewer.pal(2, "Set1")
+pal3 <-  brewer.pal(3, "Set1")
+pal4 <-  brewer.pal(4, "Set1")
+pal5 <-  brewer.pal(5, "Set1")
+pal6 <-  brewer.pal(6, "Set1")
+pal7 <-  brewer.pal(7, "Set1")
+
+hideNA = T
+
+```
+
+Quantitative data is numerical information such as age, years’ experience, numbers of items, salary and scale scores. 
+Mixed quantitative data can be analyzed using a variety of statistical techniques including as descriptive statistics, crosstab analysis, t-tests, chi-square tests, correlations, ANOVA, and logistic regressions. 
+
+A word of caution regarding some statistical concepts. 
+
+- **Correlation**. Simply means that two variables correlate to a certain degree. For example we observe that the number of deaths by drowning coincide with the number of people eating ice cream. 
+
+- **Causation.** From the previous example it should be clear that correlation is not causation. Although we can observe that higher numbers of people eating ice cream tend to coincide with higher numbers of drowning, the first does not cause the latter. Causation requires a detailed explanation of why things happen. In the context of the GEAM data and analysis, we can never talk that X causes Y and all references to “causation” should be avoided. To understand the criteria when “causation” is indicated consult [@HillEnvironmentDiseaseAssociation1965]. 
+
+- **Statistically significant** relationship. A statistically significant relationship indicates that you have sufficient evidence to conclude that the relationship you observe in the sample (e.g. all survey respondents in your organization) also exists in the population (e.g. all employees of your organization). 
+
+
+### Descriptive Statistics
+
+On a very basic level, many question items in the GEAM Core can be summarized with descriptive statistics, including a table of frequencies of responses, some graphics and measures of location and dispersion. In the following we present different examples, one for each type fo variable. Here is the example output for three variables, gender, age, and highest qualification. Note that the data has been generate randomly. 
+
+**Gender**:
+
+```{r gender, eval=!is.null(data$SDEM004), fig.align='center', fig.width=6}
+
+data %>% 
+    filter(!is.na(SDEM004) & hideNA) %>% 
+    ggplot(aes(x=SDEM004, fill=SDEM004)) + 
+    geom_bar(width=.5) +
+    scale_fill_manual(values=pal2) +
+    labs(y="Total count") +
+    guides(fill=F) +
+    theme_light() +
+    theme(axis.title.x = element_blank())
+```
+
+<p>&nbsp;</p>
+
+```{r gender_tab, eval=!is.null(data$SDEM004)}
+
+print_frqtable(data$SDEM004)
+```
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+**Age**
+
+```{r year_born, eval=!is.null(data$SDEM001)}
+#simulate some data 
+df.age <- data.frame(age=sample(c(1955:2005), 300, replace=T))
+
+ggplot(df.age,aes(x=age)) + 
+    geom_bar()+ 
+    labs(title="") +
+    theme_light() +
+    theme(axis.title.x = element_blank())
+
+```
+
+**Highest Qualification** (Categorical)
+
+```{r high_qual, eval=!is.null(data$SDEM016), fig.width=10, fig.height=5}
+
+data %>% 
+    filter(!is.na(SDEM016) & hideNA) %>% 
+    ggplot(aes(x=SDEM016, fill=SDEM016)) + 
+    geom_bar(width=.5) + 
+    coord_flip() +
+    labs(y="Total count") +
+    guides(fill=F) + 
+    theme_light() +
+    theme(axis.title.y=element_blank())
+```
+
+```{r high_qual_tab, eval=!is.null(data$SDEM016)}
+
+print_frqtable(data$SDEM016)
+```
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+**Job Satisfaction** (Likert Scale)
+
+```{r eval=!is.null(data$EWCS89JobSatisfact8_SQ001), fig.height=8, fig.width=10}
+data %>%
+  select(starts_with("EWCS89JobSatisfact8_SQ0")) %>%
+  plot_likert(geom.colors=pal6, values="show", show.prc.sign=T, catcount = 4, cat.neutral = 3) + 
+  theme_light()
+
+```
+
+
+Graphics and frequency tables will be generated automatically by the [GEAM Reporting Template](https://github.com/actongender/geam-report). 
+
+### Cross-tabs 
+
+**This section is currently under development**
+
 
 ## Analyzing Qualitative Data
 Qualitative data is non-numerical information such as written responses, recorded speech, observations, audio, images and so on. Qualitative data in surveys is produced from written responses that can be collated, ordered and analyzed for patterns (codes and themes), meaning and frequency. Qualitative data requires textual analysis and can produce rich information. Dedicated software packages for qualitative analysis are available such as [Nvivo](https://www.qsrinternational.com/nvivo/home) or [Atlas.ti](https://atlasti.com). 
@@ -47,30 +177,6 @@ Analysis:
 | Bullying: of staff team lead: from staff | 3 | 
 
 The frequency of codes can indicate issues that are most prevalent and can highlight areas to focus on when reporting the results of the survey. Key thematic findings can also be presented as a graph, helping to demonstrate key issues and findings.
-
-
-
-## Analyzing Quantitative Data
-
-Quantitative data is numerical information such as age, years’ experience, numbers of items, salary and scale scores. 
-Mixed quantitative data can be analyzed using a variety of statistical techniques including as descriptive statistics, crosstab analysis, t-tests, chi-square tests, correlations, ANOVA, and logistic regressions. 
-
-A word of caution regarding some statistical concepts. 
-
-- **Correlation**. Simply means that two variables correlate to a certain degree. For example we observe that the number of deaths by drowning coincide with the number of people eating ice cream. 
-
-- **Causation.** From the previous example it should be clear that correlation is not causation. Although we can observe that higher numbers of people eating ice cream tend to coincide with higher numbers of drowning, the first does not cause the latter. Causation requires a detailed explanation of why things happen. In the context of the GEAM data and analysis, we can never talk that X causes Y and all references to “causation” should be avoided. To understand the criteria when “causation” is indicated consult [@HillEnvironmentDiseaseAssociation1965]. 
-
-- **Statistically significant** relationship. A statistically significant relationship indicates that you have sufficient evidence to conclude that the relationship you observe in the sample (e.g. all survey respondents in your organization) also exists in the population (e.g. all employees of your organization). 
-
-
-PLEASE NOTE: THIS SECTION IS UNDER ACTIVE DEVELOPMENT. 
-
-
-### Descriptive Statistics
-
-On a very basic level, many question items in the GEAM Core can be summarized with descriptive statistics, including a table of frequencies of responses, some graphics and measures of location and dispersion. In the following we present different examples, one for each type fo variable. 
-
 
 
 

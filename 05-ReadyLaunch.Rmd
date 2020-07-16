@@ -13,13 +13,15 @@ Generally speaking responses are “anonymous” if one cannot deduce the identi
 
 LimeSurvey offers different options to store and track information about survey participants. Adjusting the level of “anonymization” has implications not only for the protection of personal data in the unlikely event of a data breach but also for managing invitations, sending reminders, the possibility to stop and resume a submission or for canceling a submission and deleting the associated data. 
 
-Before delving into the details it is important to note that these confidentiality settings concern primarily the management of participant data by the survey administrator. LimeSurvey by default does not store any personal identifiers in the result table of the survey. Unless you explicitly ask for an email address, name or ID number of a respondent, the result data set does not contain direct, personal identifiers. The GEAM Core questionnaire does not ask for any such personal identifiers.  
+Before delving into the details it is important to note that these confidentiality settings concern primarily the **management of participant data** by the survey administrator. LimeSurvey by default does not store any personal identifiers in the result table of the survey. Unless you explicitly ask for an email address, name or ID number of a respondent, the result data set does **not contain** direct, personal identifiers. The GEAM Core questionnaire does not ask for any such personal identifiers.
 
-However, LimeSurvey offers the possibility to store certain meta-information with each submission such as the Internet address of the computer used, the data and time of the submission or the URL referrer used to access the survey. In some cases, this meta-information can be used by the survey administrator to identify respondents. The identification might be justified in the case when a respondent requests the deletion of their data from the result table. 
+At the same time, LimeSurvey offers the possibility to **store certain meta-information** with each submission such as the Internet address of the computer used, the data and time of the submission or the URL referrer used to access the survey. In some cases, this meta-information can be used by the survey administrator to identify respondents. The identification might be justified in case a respondent requests the deletion of their data from the result table. 
 
-The confidentiality settings are controlled via three specific sections: the “Participant Settings”, the “Publication & access” section as well as the “Participants” section. Since the combinations of the attributes in each section can be quite complex, we introduce three possible scenarios which simplify the confidentiality settings for a given survey in “strict”, “moderate” and “comfort”. Other configurations are possible.  
+The confidentiality settings are controlled via three specific sections: the “Settings > Participant Settings”, the "Settings > Notification \& data" and “Settings > Publication \& access”. 
 
-### Strict privacy protection
+Since the combinations of the attributes in each section can be quite complex, we introduce three possible scenarios which simplify the confidentiality settings for a given survey in “strict”, “moderate” and “comfort”. Other configurations are possible.  
+
+### Strict privacy protection {#privacy-strict}
 Under this setting, the “anonymization” feature of LimeSurvey is activated. LimeSurvey will not store any meta-information with survey responses, including the IP address of the computer used, the date and time of the submission or the URL referrer.
 
 Nevertheless, respondents can interrupt the survey any moment by clicking “Resume later” at the top of each survey page and come back at a later point in time for final submission. Respondents can also "Exit and clear" a submission any time before the final submission. However, in contrast to the “Moderate privacy protection” mode (see below), submission progress is not tracked automatically: in case the browser crashes or a user leaves the survey page by accident, all data is lost. In this case, users will not be able to resume their earlier submission. Accessing the survey after a browser has crashed, will create a new response entry in the result table (while leaving the previous entry incomplete). 
@@ -31,18 +33,32 @@ A cookie is set by LimeSurvey in order to prevent a second submission from the s
 Use this settings for short questionnaires where privacy protection is paramount. 
 ```
 
-Participant settings: 
-- Anonymized responses: “On” 
-- Enable Token based: “Off”
-- Allow multiple “Off” 
-- Allow public registration “Off” 
+In order to use the "strict privacy" settings, adjust the specified options within the corresponding sections as show below: 
 
-Publication & access
-- List publicly: “Off”
-- Set cookie to prevent repeated participation: “On” 
+Click "Settings > **Participant settings**": 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Privacy settings sections" }
+knitr::include_graphics(path="images/private-strict-participant-settings.png")
+```
 
 
-### Moderate privacy setting (default GEAM)
+Click "Settings > **Notification \& data**": 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Privacy settings sections" }
+knitr::include_graphics(path="images/private-strict-notification-settings.png")
+```
+
+
+Click "Settings > **Pubication \& access**": 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Privacy settings sections" }
+knitr::include_graphics(path="images/private-strict-publication-settings.png")
+```
+
+<p>&nbsp;</p>
+
+
+### Moderate privacy setting (default GEAM) {#privacy-moderate}
 This configuration uses a token-based response tracking. It is used as the default setting for the GEAM Core questionnaire. LimeSurvey stores certain meta-information with each submission which makes the submission process more reliable and easy for respondents while offering additional insights to the survey administrator regarding the response tracking. 
 
 Under this configuration, “anonymized” responses are turned off and the “IP address”, “Date stamp” and “URL referrer” are stored with each submission. 
@@ -56,18 +72,32 @@ As long as respondents have not finalized their submission they can “Exit and 
 Use this configuration for longer surveys and data that is less sensitive. 
 ```
 
-Participant settings: 
-- Anonymized responses: “Off” 
-- Enable Token based: “On”
-- Allow multiple “Off” 
-- Allow public registration “Off” 
-      
-Publication & access
-- List publicly: “Off”
-- Set cookie to prevent repeated participation: “Off” 
+In order to use the "moderate privacy" settings, adjust the specified options within the corresponding sections as show below: 
 
-### Comfort privacy setting 
-For this privacy setting, LimeSurvey will create a “participant table” which offers a precise control over the target population responses. However, it requires that the survey administrator has access to a database of names and emails of potential respondents.1 Once the “participant table” has been uploaded to LimeSurvey, it exists as a separate table in addition to the response table of the survey, i.e. by default survey responses and participant information is not stored together. 
+Click "Settings > **Participant settings**": 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Privacy settings sections" }
+knitr::include_graphics(path="images/private-moderate-participant-settings.png")
+```
+
+
+Click "Settings > **Notification \& data**": 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Privacy settings sections" }
+knitr::include_graphics(path="images/private-moderate-notification-settings.png")
+```
+
+
+Click "Settings > **Pubication \& access**": 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Privacy settings sections" }
+knitr::include_graphics(path="images/private-moderate-publication-settings.png")
+```
+
+<p>&nbsp;</p>
+
+### Comfort privacy setting {#privacy-comfort}
+For this privacy setting, LimeSurvey will create a “participant table” which offers a precise control over the target population responses. However, it requires that the survey administrator has access to a database of names and emails of potential respondents. Once the “participant table” has been uploaded to LimeSurvey, it exists as a separate table in addition to the response table of the survey, i.e. survey responses and participant information is not stored together. 
 
 ```{block, type="noteHighlight"}
 The participant information is stored in a separate table than the survey responses. Survey responses are not associated with participant information unless the survey administrator combines this information.
@@ -75,7 +105,7 @@ The participant information is stored in a separate table than the survey respon
 
 Survey participants can be either uploaded with a CSV file or created “on the fly” by allowing participants to register their contact details before entering the first page of the questionnaire. Upon registering, the system will send out an invitation email containing the unique URL for their submission.
 
-The advantage of this configuration is that personalized invitations and reminders can be send out which usually increments the overall response rate to the survey substantially. Instructions on how to create a “participant table” can be found  in the online manual: 
+The advantage of this configuration is that personalized invitations and reminders can be send out which usually **increments the overall response rate** to the survey substantially. Instructions on how to create a “participant table” can be found  in the online manual: 
 
 ```{block, type="noteManual"}
 https://manual.limesurvey.org/Survey_participants 
@@ -89,30 +119,50 @@ Respondents can return and edit or delete their submission any time, even after 
 Use participant tables when contact details are available, response tracking is important and the questionnaire is rather long but does not contain very privacy sensitive information. 
 ```
 
-Participant settings: 
-- Anonymized responses: “Off” 
-- Enable Token based: “On”
-- Allow multiple “On” 
-- Allow public registration “Off” or “On”  
 
-Publication & access
-- List publicly: “Off”
-- Set cookie to prevent repeated participation: “Off” 
+In order to use the "comfort privacy" settings, first a "participant table" needs to be created. 
 
-Survey Participants 
-- Turn survey participants table on. 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Create survey participants table" }
+knitr::include_graphics(path="images/create-survey-participants-table.png")
+```
+
+
+Furthermore, you need to adjust the specified options within the corresponding sections as show below: 
+
+Click "Settings > **Participant settings**": 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Privacy settings sections" }
+knitr::include_graphics(path="images/private-comfort-participant-settings.png")
+```
+
+
+Click "Settings > **Notification \& data**": 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Privacy settings sections" }
+knitr::include_graphics(path="images/private-comfort-notification-settings.png")
+```
+
+
+Click "Settings > **Pubication \& access**": 
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Privacy settings sections" }
+knitr::include_graphics(path="images/private-comfort-publication-settings.png")
+```
+
 
 
 ## Explanation of individual settings
+
 As a complement to the explanations already given in the LimeSurvey manual. 
 
 Participant settings: 
 
-- **Anonymized**. Concerns storage of meta-information with each survey entry. This refers primarily to “IP address”, “date and time” of submission, and “URL referrer”. During the activation of the survey, each of these three variables can be individually activated or deactivated. If a survey is “anonymized” and a token is used (see below), this token is not stored in the result table.  
+- **Anonymized**. Concerns storage of meta-information with each survey entry. If turn "on", this overwrites the submission start and completion dates with a generic time 1980-01-91 in order to avoid potential matching of server log entries with survey submission.   
 
 - **Enable token-based response persistence.** If enabled, concerns mainly an automatic “interrupt and resume later” functionality. Tokens are used to store persistent data for an ongoing submission. In case a browser crashes or a browser window is accidentally closed, respondents can resume their submission where they left off. This persistence functionality works independent from the “anonymization” feature turned “on” or “off”. 
 
-- **Allow multiple responses or update responses with one token.** In case tokens are stored permanently in a participant database, respondents can access their submission data after it has been submitted. A personalized (token-based) URL has to exist in order for respondents to be able to access (and delete) their data after finalizing a submission. This attribute has no effect if used independently from a participant table! 
+- **Allow multiple responses or update responses with one token.** In case tokens are stored permanently in a participant database, respondents can access their submission data after it has been submitted. A personalized (token-based) URL has to exist in order for respondents to be able to access (and delete) their data after finalizing a submission. In order for this attribute to have any effect, a participante table needs to be created.  
 
 Publication & access
 
