@@ -29,7 +29,7 @@ When clicking a specific question in the left "Structure" column, it becomes edi
 knitr::include_graphics(path="images/question-editor.png")
 ```
 
-In contrast, the "Question Overiew" provides access to the setting conditional logics, default answer, export options or for deleting the question. Note the change in the top button rows in the Illustration below. 
+In contrast, the "Question Overview" provides access to the setting "conditional logics", "default answers", "export options" or for "deleting" the question. Note the change in the top button rows in the illustration below. 
 
 ```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Question Editor" }
 knitr::include_graphics(path="images/question-overview.png")
