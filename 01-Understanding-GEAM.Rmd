@@ -1,33 +1,45 @@
 # Understanding the GEAM
 
+The ACT Gender Equality Audit and Monitoring tool is a modular questionnaire framework which captures the perceptions of employees regarding key dimensions of gender equality within an organizational unit. Ideally it is launched during the initial stages of a Gender Equality Plan to understand better the specific challenges faced by each institution from the perspective of its employees. As such it complements other types of data collected for example from Human Resource departments on the representation of women and men across different staff categories and salary brackets.
 
-The ACT Gender Equality Audit and Monitoring tool is a modular questionnaire framework which improves on previous monitoring tools such as the developed during the PLOTINA project, GENDER-NET, EGERA, or INTEGER. It furthermore builds on the ASSET 2016 Survey developed by AdvanceHE and offers a standardized monitoring tool to be utilized by higher education institutions across the EU and beyond.  
+The GEAM questionnaire offers a second layer of insights abouts people's experiences and perceptions within an organization. Perceptions are important for example to understand the working climate, experiences of bullying or harrassment, burnout or job satisfaction. Overall, it provides a holistic picture regarding the experience of gender equality that goes beyond the basic, numerical representation and participation of women and men within an organization. It offers a unique tool to capture the perceptions and experiences of **working conditions from a gender perspective**.
 
 ## Thematic coverage and modules
 
-The GEAM tool includes several thematic question modules that cover different aspects related to gender equality in the work place:  
+The GEAM tool includes several thematic question modules that cover different aspects related to gender equality in the work place:
 
-- **Socio-demographics/ academic position** questions collect information on the following: date of birth, citizenship status(es), religious belief, sex and gender, sexual orientation, trans status or history, disability, highest qualification, parents’ highest qualifications and net household income.
+-   **Socio-demographics/ academic position** questions collect information on the following: date of birth, citizenship status(es), religious belief, gender, sexual orientation, trans history, disability, highest qualification, parents' highest qualifications and net salary.
 
-- **Working conditions** questions collect information on the following: position in organization, academic field, net salary, bonus, faculty/ department, contract type, career access, progression, barriers and development training, caring responsibilities, work role responsibilities, work and pay conditions and satisfaction levels, pregnancy support, work-family balance, leave support and workload.
+-   **Working conditions** questions collect information on the following: position in organization, academic field, bonus, faculty/ department, contract type, career access, progression, barriers and development training, caring responsibilities, work role responsibilities, job satisfaction, work-family balance, leave support and workload.
 
-- **Stereotypes, prejudices and bias** questions collect information on unconscious bias, bias during recruitments, neosexism, atypical sexism, leadership.  Questions and response options in this section are not editable.
+-   **Organizational culture and climate** questions collect information on representation of men and women, gender equality, differences in allocation of roles, promotions, treatment, perceptions of work environment and climate, recruitment factors, promotion factors, masculinity perceptions.
 
-- **Organizational culture and climate** questions collect information on representation of men and women, gender equality, differences in allocation of roles, promotions, treatment, perceptions of work environment and climate, recruitment factors, promotion factors, masculinity perceptions, team climate.
-
-- **Interpersonal behaviors and experiences** questions collect information on microaggressions, harassment, bullying and stalking, organizational workplace culture on bullying and harassment.
-
+-   **Interpersonal behaviors and experiences** questions collect information on microaggressions, harassment, bullying and stalking, organizational workplace culture on bullying and harassment.
 
 ## Adaptability and comparability
 
-The GEAM questionnaire comprises numerous tried and tested questions from the 2016 ASSET survey that show evidence of producing quality results. Additional questions and response options, where possible, use proven measurement scales that show reliable results for internal consistency such as a high Cronbach alpha mean. An overview of the scientific background literature for the chosen scales is availble in [@AldercotteACTGenderEquality2019]. 
+The GEAM builds on the ASSET 2016 Survey developed by AdvanceHE and offers a standardized monitoring tool to be utilized by higher education institutions across the EU and beyond.
 
-In order to maintain the quality of the collected data, we recommend to **not modify individual answer options**. At the same time, the GEAM Core needs to be adapted to the specific context of the target organization or organizational unit. The balance between comparability of data, data quality and the relevance of the questionnaire for a given organizational context is not always easy to achieve.
+Additional questions and response options, where possible, use proven measurement scales that show reliable results for internal consistency such as a high Cronbach alpha mean. An overview of the scientific background literature for the chosen scales is availble in [@AldercotteACTGenderEquality2019].
+
+In order to maintain the quality of the collected data, we recommend to **not modify individual answer options**. At the same time, the GEAM needs to be adapted to the specific context of the target organization or organizational unit. The balance between comparability of data, data quality and the relevance of the questionnaire for a given organizational context is not always easy to achieve.
 
 In section [Adapting questionnaire content](#adapting-content) we provide an overview which questions **need to be adapted**. If you need to make changes to other questions, we recommend to delete/add entire questions but **not to modify the wording of question texts or answer options**.
 
+## Overview of the GEAM Workflow
 
-## Visual Quckstart
+The GEAM tool includes several components that faciliate the steps involved in designing, launching, and reporting of an online questionnaire. A standard workflow for carrying out a GEAM suirvey and reporting is shown in the following illustration (from left to right):
+
+![Overview of GEAM infrastructure](images/GEAM-Infrastructure.png)
+
+1.  The GEAM questionnaire provides the initial building block. It is already implemented in 8 languages using the ACT LimeSurvey installation.
+2.  After gaining access to a new copy, survey administrators can concentrate on customizing questionnaire content to their specific organizational needs. Extensive documentation is available (in this document) to help users to manage LimeSurvey, adapt questions and safely manage their data.
+3.  The survey is then ready to launch. Survey administrators can monitor response rates and manage reminders for as long as needed.
+4.  After the completion of the survey, a reporting template is available to generate the descriptive statistics report on the fly. A further manual guides readers to carry out a more in-depth statistical analyisis and interpretation of their results.
+
+The GEAM questionnaire reduces substantially the time needed to setup and launch an online survey. Together with the reporting templates, it furthermore saves valuable time on the reporting task - time that can be reinvested in the interpretation of results and the design of gender equality measures.
+
+## Visual Quickstart
 
 For an overview of the GEAM tool see [GEAM Introduction](https://vimeo.com/438557308)
 
@@ -35,15 +47,8 @@ For an overview of the GEAM tool see [GEAM Introduction](https://vimeo.com/43855
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/438557308" width="640" height="360" frameborder="1" allowfullscreen></iframe>
 ```
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
-
 For basic notions of how to edit and adapt the GEAM questionnaire see [GEAM First Steps](https://vimeo.com/422763740)
 
 ```{block}
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/422763740" width="640" height="360" frameborder="1" allowfullscreen></iframe>
 ```
-
-
-

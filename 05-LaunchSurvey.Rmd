@@ -1,0 +1,90 @@
+# Launching A Survey
+
+Launching the survey is relatively straight forward. It can either be activated by the "Activate this survey" button or through the "Publication and Access" settings which offers more fine tuned controls in terms of specifying start/end dates.
+
+```{block, type="noteManual"}
+Corresponding section of the online manual: 
+https://manual.limesurvey.org/Publication_%26_access 
+```
+
+**Step 1: Set start / end dates**
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Activate the survey" }
+knitr::include_graphics(path="images/activate-survey.png")
+```
+
+Further settings:
+
+**List survey publicly:** "Off". Surveys can be listed under the following URL: <https://www.act-on-gender.eu/survey/> This is not recommended since you do not want to invite anonymous people (or robots) to submit data.
+
+**CAPTCHA** Settings should all be set to "Off". CAPTCHAS are used to prevent spamming and robots to access an active survey. CAPTCHAS are a good idea in case your survey is listed publicly or the access URL distributed through Twitter or other public forums. For the GEAM, this should usually not be the case; invitation to participate should be restricted to private forums and channels, including direct email messages.
+
+```{block, type="noteHighlight"}
+Note that no changes to the content are possible once a survey has been launched, except changes to the question text, help texts, or question group descriptions, essentially those elements of the questionnaire which do not affect the variable structure. 
+```
+
+**Step 2: Revise privacy settings**
+
+As shown in the following screenshot, LimeSurvey also displays the summary of your privacy settings which cannot be changed after the launch. The privacy settings should reflect your choices as explained in section [Controlling data privacy and response tracking](#launch-control-privacy)
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Final check before survey activation" }
+knitr::include_graphics(path="images/Activate_01.png")
+```
+
+After clicking "Save & activate survey" LimeSurvey displays a notification message, informing about the successful creation of the result table which stores respondents data.
+
+**Step 3: Participants Table**
+
+In a final step, LimeSurvey will also offers the option to switch to "closed access mode" and create a "participant table" to register survey respondents name and email.
+
+You should choose "No, thanks" - assuming that you have read the section on [Controlling data privacy and response tracking](#launch-control-privacy) and do not want to create a participant table.
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Notification of successful activation of survey" }
+knitr::include_graphics(path="images/ActivatedNotification_01.png")
+```
+
+**URL address of survey** Your survey URL is available in the "Settings \> Overview" section. You can copy/paste this URL address to distribute and invite survey participants in case no participant table has been activated.
+
+## Tracking Statistics
+
+LimeSurvey can generate some simple descriptive statistics while your survey is active or after it has been deactivated.
+
+```{block, type="noteManual"}
+Corresponding online manual section: https://manual.limesurvey.org/Statistics 
+```
+
+## Sending Reminders
+
+Most surveys requires several waves of reminders to be send. If your survey has been launched without a "participant table", reminders need to be send via the available communication channels (email lists, private forums, etc.). Reminders under the ["strict"](#privacy-strict) or ["moderate"](#privacy-moderate) security settings\` can't be personalized. Each wave of reminder will be send to all potential participants, **irrespective if they have answered your survey already or not**.
+
+In case a "participant table" is used, you can create **personalized wave of reminders** -- with the advantage to reach only those potential respondents who have not replied so far. Personalized reminders via the LimeSurvey internal notification system increment the response rate of your survey notably.
+
+```{block, type="noteManual"}
+Corresponding online manual section: https://manual.limesurvey.org/Survey_participants#Invitations_.26_reminders 
+```
+
+## Stopping, relaunching, finalizing survey
+
+After a survey has been activated, you can manually "Stop this survey" at any time. In case an end date has been entered, the survey will expire automatically at the given deadline.
+
+A survey can be "expired" or "deactivated". Understanding the difference is crucial and has important implications for accessing result data!
+
+**Expire a survey:** is synonymous to the end date of your survey. It simply will not be reachable for respondents.
+
+```{block, type="noteWarning"}
+Expire your survey, then download the results!
+```
+
+An expired survey can be relaunched, for example in case you decide to extend the deadline for submissions. Just enter a new end date.
+
+**Deactivate a survey:** when deactivating a survey you will reset it into "editable" mode, i.e. all content, including questions and answer items can be modified, deleted or added. It resets and "empties" the survey into the pre-launch state.
+
+```{block, type="noteWarning"}
+**Always, always, always** download the results of your survey before it is deactivated!  
+```
+
+A deactivated survey cannot be relaunched, or rather, this will create a brand-new response table. **All previous responses are lost**! Strictly speaking they are not lost, but you need to contact the system administrator to recover the data. In such a case, you need to remember the ID of your survey shown in parenthesis "Stop this survey (XXXXX)" in in the next Illustration.
+
+```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="'Expire' your survey to download results! Then deactivate." }
+knitr::include_graphics(path="images/StopSurvey_01.png")
+```

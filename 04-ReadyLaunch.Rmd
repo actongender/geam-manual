@@ -13,7 +13,7 @@ Generally speaking responses are “anonymous” if one cannot deduce the identi
 
 LimeSurvey offers different options to store and track information about survey participants. Adjusting the level of “anonymization” has implications not only for the protection of personal data in the unlikely event of a data breach but also for managing invitations, sending reminders, the possibility to stop and resume a submission or for canceling a submission and deleting the associated data. 
 
-Before delving into the details it is important to note that these confidentiality settings concern primarily the **management of participant data** by the survey administrator. LimeSurvey by default does not store any personal identifiers in the result table of the survey. Unless you explicitly ask for an email address, name or ID number of a respondent, the result data set does **not contain** direct, personal identifiers. The GEAM Core questionnaire does not ask for any such personal identifiers.
+Before delving into the details it is important to note that these confidentiality settings concern primarily the **management of participant data** by the survey administrator. LimeSurvey by default does not store any personal identifiers in the result table of the survey. Unless you explicitly ask for an email address, name or ID number of a respondent, the result data set does **not contain** direct, personal identifiers. The GEAM questionnaire does not ask for any such personal identifiers.
 
 At the same time, LimeSurvey offers the possibility to **store certain meta-information** with each submission such as the Internet address of the computer used, the data and time of the submission or the URL referrer used to access the survey. In some cases, this meta-information can be used by the survey administrator to identify respondents. The identification might be justified in case a respondent requests the deletion of their data from the result table. 
 
@@ -59,7 +59,7 @@ knitr::include_graphics(path="images/private-strict-publication-settings.png")
 
 
 ### Moderate privacy setting (default GEAM) {#privacy-moderate}
-This configuration uses a token-based response tracking. It is used as the default setting for the GEAM Core questionnaire. LimeSurvey stores certain meta-information with each submission which makes the submission process more reliable and easy for respondents while offering additional insights to the survey administrator regarding the response tracking. 
+This configuration uses a token-based response tracking. It is used as the default setting for the GEAM questionnaire. LimeSurvey stores certain meta-information with each submission which makes the submission process more reliable and easy for respondents while offering additional insights to the survey administrator regarding the response tracking. 
 
 Under this configuration, “anonymized” responses are turned off and the “IP address”, “Date stamp” and “URL referrer” are stored with each submission. 
 

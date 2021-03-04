@@ -6,7 +6,7 @@ The GEAM questionnaire is hosted and managed by the UOC, coordinator of the ACT 
 
 In order to use the ACT LimeSurvey installation you need to request an account by email to info\@act-on-gender.eu providing a valid email address and full name for your account. We can create up to four additional user accounts for a given survey. This is useful if you want to manage your survey between several people – just include the additional emails and full names. If you request more than one user account for a given questionnaire, indicate the person responsible as survey administrator. Each questionnaire requires a main survey administrator whose email will be used for survey- or bounce notifications. 
 
-Please also include in your email a short description about the target audience / organization or organizational unit you want to use the GEAM for. If not stated otherwise, your account will have an instance of the GEAM Core pre-installed. 
+Please also include in your email a short description about the target audience / organization or organizational unit you want to use the GEAM for. If not stated otherwise, your account will have an instance of the GEAM pre-installed. 
 
 You will be notified about your account creation via email. After loggin on, the questionnaire under your ownership will be displayed. 
 
@@ -23,19 +23,19 @@ Each user will have the same access rights:
 Basically, you have all rights concerning your questionnaire and survey but no rights beyond that on the LimeSurvey platform as such. 
 
 ## Taking responsibility (for data)
-Once your account has been created you can start editing your copy of the GEAM Core. You can add and delete sections and adapt the data policy text. Since the survey administrator will be responsible for adapting the GEAM Core to the specific organizational context, it will be the survey administrator who is responsible for the questionnaire content and result data. 
+Once your account has been created you can start editing your copy of the GEAM. You can add and delete sections and adapt the data policy text. Since the survey administrator will be responsible for adapting the GEAM to the specific organizational context, it will be the survey administrator who is responsible for the questionnaire content and result data. 
 
 You can only launch the survey – and thus start to collect data – once you have signed and returned the corresponding [Annex III - Declaration of Data Protection and Confidentiality Agreement](#annex-iii-declaration-of-data-protection). 
 
 
 ## Adjusting global questionnaire settings
-The GEAM Core as well as any other questionnaire requires adjusting of global settings. 
+The GEAM as well as any other questionnaire requires adjusting of global settings. 
 
 
 ### Language(s)  
-The GEAM Core questionnaire is available in different languages, including in English, Polish, Lithuanian, Spanish and German. Other languages are forthcoming.  
+The GEAM questionnaire is available in different languages, including in English, Polish, Lithuanian, Spanish, German, French, Slovenia, and Ukrainian. 
 
-All elements of the GEAM Core are translated to the listed languages, including data policy texts, general text messages, questions and response items. 
+All elements of the GEAM are translated to the listed languages, including data policy texts, general text messages, questions and response items. 
 
 We recommend to **delete** any language not used in your survey. Deleting a language from the questionnaire is done under Genderal Survey Settings by simply removing the corresponding language tag. In the below example, the Spanish version of the questionnaire would be deleted.
 
@@ -43,7 +43,7 @@ We recommend to **delete** any language not used in your survey. Deleting a lang
 knitr::include_graphics(path="images/DelLanguage_01.png")
 ```
 
-Once a specific language version has been deleted, it can't be restored. You would need to delete the entire questionnaire and import the GEAM Core from scratch, potentially loosing all changes you already incorporated to your current version. 
+Once a specific language version has been deleted, it can't be restored. You would need to delete the entire questionnaire and import the GEAM from scratch, potentially loosing all changes you already incorporated to your current version. 
 
 In case you want to **add an additional language**, please be aware that this requires the translation of the entire questionnaire, including all question and answer texts, which is quite time intensive. You can add any additional language by:
 
@@ -69,11 +69,11 @@ Any adaptations or editing you undertake in your questionnaire needs to be **mir
 
 
 ### Navigation 
-LimeSurvey offers different options for navigating an active survey. Being an online environment, the navigation (and responses) can be organized by sub-sections or pages. For relatively short questionnaires, all questions can be presented in one-go, on a single page. For larger questionnaires, we recommend to organize user responses by sub-dividing the questionnaire in different thematic sections (this is the default setting). The GEAM Core is sub-divided in 9 thematic sections where questions and response items for each section are presented on a single “page”.
+LimeSurvey offers different options for navigating an active survey. Being an online environment, the navigation (and responses) can be organized by sub-sections or pages. For relatively short questionnaires, all questions can be presented in one-go, on a single page. For larger questionnaires, we recommend to organize user responses by sub-dividing the questionnaire in different thematic sections (this is the default setting). The GEAM is sub-divided in 9 thematic sections where questions and response items for each section are presented on a single “page”.
 
 “Page” refers here to a webpage, i.e. users can respond to all questions of a given section without having to make another call to the web server. Depending on the specific questionnaire section, this still can involve many questions and answer options that would not fit onto a standard DIN A4 printed page. 
 
-Under “General Settings”, you can select how survey respondents may navigate between sections. The default settings for the GEAM Core in terms of navigation is “Group by Group”, i.e. the questionnaire is divided into 9 sub-sections. When deciding between this option or the two other alternatives - “Question by question” and “Single page” - one needs to strike a balance between the length of the questionnaire, providing contextual information about certain question sections and the necessity to save intermediate responses. 
+Under “General Settings”, you can select how survey respondents may navigate between sections. The default settings for the GEAM in terms of navigation is “Group by Group”, i.e. the questionnaire is divided into 9 sub-sections. When deciding between this option or the two other alternatives - “Question by question” and “Single page” - one needs to strike a balance between the length of the questionnaire, providing contextual information about certain question sections and the necessity to save intermediate responses. 
 
 ### Presentation
 
@@ -91,7 +91,7 @@ Other important adjustments concern:
 
 It might be a disadvantage of you need certain information from an “earlier” section for routing and making decisions regarding a “later” section in your questionnaire. Providing a questionnaire index also allows users to explore the different sections before answering any. “Incremental” means that the overall presentation of the questionnaire is linear (you can't jump ahead), but that users can navigate to earlier sections backwards in a non-linear way. This might be useful if you want to allow users to jump to the first page from the last without click the “Back” button on each page one-page a time. 
 
-**Show group name and/or group description**: “Show both”. This refers to the descriptions the GEAM Core provides for each of the 9 sections. It helps respondents to contextualize the questions of each section. In some cases, e.g. “Behavior - Bullying, Harassment, Microagression”, the description contains definitions of each of the terms used. Should to set to "Show both". 
+**Show group name and/or group description**: “Show both”. This refers to the descriptions the GEAM provides for each of the 9 sections. It helps respondents to contextualize the questions of each section. In some cases, e.g. “Behavior - Bullying, Harassment, Microagression”, the description contains definitions of each of the terms used. Should to set to "Show both". 
 
 **Show progress bar**: “On”. Informs respondents about the progress made, i.e. how many questions are left.
 
@@ -111,7 +111,7 @@ Before adapting the questionnaire content, it might be worth to think a moment a
 Thinking about the target population is important not only for estimating the number of expected responses but also for making decisions regarding the distribution of the survey and response tracking. 
 ```
 
-Let's take the example of the GEAM Core which most likely will be distributed within a research center, an entire university or specific faculties or departments. 
+Let's take the example of the GEAM which most likely will be distributed within a research center, an entire university or specific faculties or departments. 
 
 In an ideal situation, you have the contact information (including email) of your target population. This has advantages in terms of personalizing invitation emails and in terms of response tracking (see “Comfort privacy setting") but also in terms of controlling who has access to the survey. Since invitations are personalized, all responses use a unique token while being submitted. Nobody without an invitation can participate in the survey. 
 
@@ -143,9 +143,11 @@ In the above example, the organizational reference unit is "department". the "PL
 
 In case the desired organizational unit of the target population is not listed, a new entry can be aggregated by “Edit answer options”. Note that new answer options need to be provided for all activated languages. 
 
+An alternative option is to replace manually the variable "{VarOrgType.shown}" in question texts and sub-question items. 
+
 
 ## Adapting questionnaire content {#adapting-content}
-After a new GEAM Core has been created, some content needs to be adapted. 
+After a new GEAM has been created, some content needs to be adapted. 
 
 ```{block, type="noteHighlight"}
 Avoid changing question codes. Codes are used for generating automatically the descriptive statistics of your results. You can hide question codes before launching a survey! See "Presentation" settings above. 
@@ -190,7 +192,7 @@ The Data Policy is part of the home page of the survey. It will be displayed tog
 knitr::include_graphics(path="images/DataPolicy_01.png")
 ```
 
-You need to **adapt/edit the default Data Policy text** provided by the GEAM Core. This includes: 
+You need to **adapt/edit the default Data Policy text** provided by the GEAM. This includes: 
 - provision of a valid email address and full name for the survey administrator who will be responsible for the survey and the resulting data. 
 - Choose one among the three available data privacy sections, “strict”, “moderate”, or “comfort”. For the detailed explanation of each of these settings see [Controlling data privacy and response tracking]({#launch-control-privacy}). 
 
@@ -225,7 +227,7 @@ The following questions should be revised and adapted to the organizational cont
 Other questions and response options cannot be changed. These response options allow for organizational, national and transnational standardization and comparisons. This is especiallyl important for socio-demographic questions such as year if birth, marital or partnership status, gender, sex and current role position.
 
 ### Adding or deleting questions or question groups
-You can add new question groups and questions. The GEAM Core is organized according to 9 question groups or sections. All questions contained within a question groups will be displayed in a single page; users can navigate between questions group with the “Next” or “Back” buttons – which will save all data/fields. 
+You can add new question groups and questions. The GEAM is organized according to 9 question groups or sections. All questions contained within a question groups will be displayed in a single page; users can navigate between questions group with the “Next” or “Back” buttons – which will save all data/fields. 
 
 ```{block, type="noteManual"}
 See corresponding sections in the online manual 
@@ -246,7 +248,7 @@ Before deleting questions or question groups, we recommend to export questions o
 ### Mandatory questions
 As in most survey platforms, LimeSurvey allows you to indicate which questions are mandatory and which ones can be skipped. Making a question mandatory implies that users will not be able to proceed or submit their data without having answered to the required question. Making certain questions obligatory – especially for long questionnaires - always involves a delicate balance between the desired information (quality) versus not alienating the respondent who might feel that certain questions are not meaningful for their context or would like to skip certain sections. Having many obligatory questions increases the chances that respondents abandon the survey or clicks random answers to continue. 
 
-Making certain questions mandatory assures that your results meet a certain minimal threshold in terms of data quality and opportunities for analysis. For example, the results of the GEAM Core will be useless if users are not obliged to fill out basic socio-demographic data such as “gender” and “age”. Without this socio-demographic variables you will not be able to analyze how working conditions or organizational culture and climate or any other construct differ by gender!
+Making certain questions mandatory assures that your results meet a certain minimal threshold in terms of data quality and opportunities for analysis. For example, the results of the GEAM will be useless if users are not obliged to fill out basic socio-demographic data such as “gender” and “age”. Without this socio-demographic variables you will not be able to analyze how working conditions or organizational culture and climate or any other construct differ by gender!
 
 You can toggle if a question is mandatory while editing it. 
 

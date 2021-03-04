@@ -1,6 +1,6 @@
 # ACT - Gender Equality Audit and Monitoring (GEAM) Manual
 
-This manual provides hands-on guidance for the Gender Equality Audit and Monitoring (GEAM) tool which has been developed in the frame of the ACT project. See [https://www.act-on-gender.eu](https://www.act-on-gender.eu) for details. 
+This manual provides hands-on guidance setting up, customizing and launching the Gender Equality Audit and Monitoring (GEAM) questionnaire which has been developed in the frame of the ACT project. See [https://www.act-on-gender.eu](https://www.act-on-gender.eu) for details. 
 
 To use the GEAM survey instrument please visit [https://geam.act-on-gender.eu](https://geam.act-on-gender.eu) and apply for an account. 
 
