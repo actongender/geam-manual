@@ -1,4 +1,5 @@
-# Launching A Survey
+Launching A Survey
+==================
 
 Launching the survey is relatively straight forward. It can either be activated by the "Activate this survey" button or through the "Publication and Access" settings which offers more fine tuned controls in terms of specifying start/end dates.
 
@@ -43,9 +44,10 @@ You should choose "No, thanks" - assuming that you have read the section on [Con
 knitr::include_graphics(path="images/ActivatedNotification_01.png")
 ```
 
-**URL address of survey** Your survey URL is available in the "Settings \> Overview" section. You can copy/paste this URL address to distribute and invite survey participants in case no participant table has been activated.
+**URL address of survey** Your survey URL is available in the "Settings \> Overview" section. You can copy/paste this URL address to distribute and invite survey respondents in case no participant table has been activated.
 
-## Tracking Statistics
+Tracking statistics
+-------------------
 
 LimeSurvey can generate some simple descriptive statistics while your survey is active or after it has been deactivated.
 
@@ -53,9 +55,10 @@ LimeSurvey can generate some simple descriptive statistics while your survey is 
 Corresponding online manual section: https://manual.limesurvey.org/Statistics 
 ```
 
-## Sending Reminders
+Sending reminders
+-----------------
 
-Most surveys requires several waves of reminders to be send. If your survey has been launched without a "participant table", reminders need to be send via the available communication channels (email lists, private forums, etc.). Reminders under the ["strict"](#privacy-strict) or ["moderate"](#privacy-moderate) security settings\` can't be personalized. Each wave of reminder will be send to all potential participants, **irrespective if they have answered your survey already or not**.
+Most surveys requires several waves of reminders to be send. If your survey has been launched without a "participant table", reminders need to be send via the available communication channels (email lists, private forums, etc.). Reminders under the ["strict"](#privacy-strict) or ["moderate"](#privacy-moderate) security settings\` can't be personalized. Each wave of reminder will be send to all potential respondents, **irrespective if they have answered your survey already or not**.
 
 In case a "participant table" is used, you can create **personalized wave of reminders** -- with the advantage to reach only those potential respondents who have not replied so far. Personalized reminders via the LimeSurvey internal notification system increment the response rate of your survey notably.
 
@@ -63,7 +66,8 @@ In case a "participant table" is used, you can create **personalized wave of rem
 Corresponding online manual section: https://manual.limesurvey.org/Survey_participants#Invitations_.26_reminders 
 ```
 
-## Stopping, relaunching, finalizing survey
+Stopping, relaunching, finalizing survey
+----------------------------------------
 
 After a survey has been activated, you can manually "Stop this survey" at any time. In case an end date has been entered, the survey will expire automatically at the given deadline.
 

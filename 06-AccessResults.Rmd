@@ -1,10 +1,12 @@
-# Accessing Results
+Accessing results
+=================
 
-## Monitoring Progress
+Monitoring progress
+-------------------
 
 Several options are available to track responses while your survey is active. A first overview regarding the "Partial", "Full", "Total" responses is available from the survey listing after logging onto the system.
 
-A more detailed view is available form the "Responses & Statistics" section.
+A more detailed view is available from the "Responses & Statistics" section.
 
 ```{block, type="noteManual"}
 Corresponding online manual section: 
@@ -23,13 +25,15 @@ Ordering the response table by “Lastpage” gives a quick overview of problema
 knitr::include_graphics(path="images/ResponseTrack_01.png")
 ```
 
-## Exporting Questionnaire Structure
+Exporting questionnaire structure
+---------------------------------
 
 The structure of your questionnaire including groups, questions, answers and conditions can be downloaded and stored as Survey Structure (\*.lss) file. In case you want to repeat your survey in the future, it will be easy to restore the identicial questionnaire by importing the Survey Structure file in any compatible LimeSurvey installation. **The LSS file does not contain any responses**.
 
 You can create a backup of your questionnaire under Display/Export \> Survey structure (\*.lss) file. This will contain the text elements in all available languages of your GEAM instance.
 
-## Exporting Survey Results
+Exporting survey results
+------------------------
 
 Survey results can be downloaded (or exported) while a survey is active or after it has been "expired". Be careful: **do not "deactivate"** your survey before downloading results, as your data will be lost!
 
@@ -107,12 +111,13 @@ The files need to be manually combined before importing them. Open the syntax fi
 
 In case the labels for the variables in the SPSS file contain errors, a work-around consists of creating first the RData file and then exporting to SPSS from within R.
 
-## Deleting a survey (online)
+Deleting a survey (online)
+--------------------------
 
 After a survey is finished and the result data has been downloaded, we strongly recommend deleting the survey from the ACT LimeSurvey platform. In the unlikely event the survey platform is being compromised, there is no danger of exposing any respondent data. Please consider the following steps:
 
 1.  Export your survey result data if you haven't do so.
-2.  If you have used a "participant table" for distributing and remining your participants, export it as well. This will be important in order to comply with potential data deletion requests by individual respondent as stipulated by the GDPR policy.
+2.  If you have used a "participant table" for distributing and remining your respondents, export it as well. This will be important in order to comply with potential data deletion requests by individual respondent as stipulated by the GDPR policy.
 3.  Consider exporting and sharing your questionnaire structure -- especially in case you have made considerable modifications. Your questionnaire might provide helpful for others working in similar institutional or regional/country context.
 4.  Delete your survey under Tools \> Delete Survey.
 
@@ -123,10 +128,11 @@ https://manual.limesurvey.org/Delete_survey
 
 System administrators check regularly for expired surveys. In case a survey has not been deleted one month after its finalization, we will inform the survey administrator about the imminent deletion. If we do not hear back within two weeks time, the survey will be deleted.
 
-## Where to go from here?
+Where to go from here?
+----------------------
 
 Once the survey has been finished and results downloaded, the exploration of the data can start. Usually this involves to generate frequency tables and charts to visually inspect responses. During these initial explorations the results should be scrutinized in relation to the overall organizational context, highlighting similarities and differences with other data sources.
 
 The [GEAM reporting template](https://github.com/actongender/geam-report) can be used to generate a MS Word file containing the descriptive statistics including frequency tables and charts for each question.
 
-Initial explorations on the descriptive level should then be followed up with more in-depth statistical analysis. The ACT manual for statistical analysis of GEAM survey data is available for further guidance.
+Initial explorations on the descriptive level should then be followed up with more in-depth statistical analysis. The ACT handbook for statistical analysis of GEAM survey data will be available for further guidance.

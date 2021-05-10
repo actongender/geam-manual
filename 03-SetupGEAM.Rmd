@@ -1,6 +1,6 @@
 # Setting up a GEAM Questionnaire
 
-The GEAM questionnaire is hosted and managed by the UOC, coordinator of the ACT project. The technical features of the LimeSurvey CE edition requires to centralize the management of accounts and creation of questionnaires. 
+The GEAM questionnaire is hosted and managed by the FUOC, coordinator of the ACT project. The technical features of LimeSurvey CE require a host in order to centralize the management of accounts and creation of questionnaires.
 
 ## Request an account / copy of the GEAM questionnaire
 
@@ -75,8 +75,8 @@ LimeSurvey offers different options for navigating an active survey. Being an on
 
 Under “General Settings”, you can select how survey respondents may navigate between sections. The default settings for the GEAM in terms of navigation is “Group by Group”, i.e. the questionnaire is divided into 9 sub-sections. When deciding between this option or the two other alternatives - “Question by question” and “Single page” - one needs to strike a balance between the length of the questionnaire, providing contextual information about certain question sections and the necessity to save intermediate responses. 
 
-### Presentation
 
+### Presentation
 Under “Settings > Presentation” user can control the display of the the questionnaire. Most importantly, the display of **questions codes** can be turned off. 
 
 **Show question number and/or code**: “Show question number only”. This will hide the question code (e.g. WCWI006 used for internal identification of question) and leaves only the automatic question number visible, starting at 1.  
@@ -115,7 +115,7 @@ Let's take the example of the GEAM which most likely will be distributed within 
 
 In an ideal situation, you have the contact information (including email) of your target population. This has advantages in terms of personalizing invitation emails and in terms of response tracking (see “Comfort privacy setting") but also in terms of controlling who has access to the survey. Since invitations are personalized, all responses use a unique token while being submitted. Nobody without an invitation can participate in the survey. 
 
-Under many circumstances, a detailed database of email addresses of survey participants is not available while the target population is still relatively well defined. For example, the target population could be “all academic staff” in an organization or “all students”. Using available internal communication channels (e.g. email distribution lists), a generic link to the survey can be distributed easily. However, by providing a generic web address of the survey, potentially any persons with access to the URL can also fill in the questionnaire. Thus, control in terms of undesired responses is very limited. For example, a student with access to the survey link could respond to the survey that targets academic staff only. 
+Under many circumstances, a detailed database of email addresses of survey respondents is not available while the target population is still relatively well defined. For example, the target population could be “all academic staff” in an organization or “all students”. Using available internal communication channels (e.g. email distribution lists), a generic link to the survey can be distributed easily. However, by providing a generic web address of the survey, potentially any persons with access to the URL can also fill in the questionnaire. Thus, control in terms of undesired responses is very limited. For example, a student with access to the survey link could respond to the survey that targets academic staff only. 
 
 
 ### Choose organizational unit
@@ -125,7 +125,7 @@ In order to **contextualize** the survey to a given **organizational unit**, swi
 
 1. Click “[VarOrgType > …]" 
 
-2. Click botton "Edit default answer" 
+2. Click button "Edit default answer" 
 
 
 ```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Edit default answer of VarOrgType" }
@@ -133,7 +133,7 @@ knitr::include_graphics(path="images/VarOrgType_01.png")
 ```
 
 
-3. Now selecte the desired organizational unit from the dropwdown menu and save your changes. Repeat this step for all active languages. 
+3. Now select the desired organizational unit from the dropdown menu and save your changes. Repeat this step for all active languages. 
 
 ```{r echo=FALSE, fig.align='center', out.width="100%", fig.caption="Select targeted organizational unit" }
 knitr::include_graphics(path="images/VarOrgType_02.png")
@@ -155,7 +155,7 @@ Avoid changing question codes. Codes are used for generating automatically the d
 
 
 ### Text messages
-Adapting the GEAM questionnaire involves writing a specific welcome and ending message for the survey. It is an opportunity to introduce the questionnaire to your participants, explain its purpose, to whom it is addressed, why it is important to participate and what will happen to the results. 
+Adapting the GEAM questionnaire involves writing a specific welcome and ending message for the survey. It is an opportunity to introduce the questionnaire to your respondents, explain its purpose, to whom it is addressed, why it is important to participate and what will happen to the results. 
 
 ```{block, type="noteManual"}
 
@@ -179,7 +179,7 @@ Under “Settings > Text Elements” please fill out:
 - Why is it important to participate? Which also relates to the next item – what will happen with the results? For example, if data is used to design gender equality policies, it is important to adequate detect most pressing issues. 
 - What will happen to the results? 
 
-**End message:** The end message will be displayed once respondents have submitted their data at the end of the questionnaire. It is a good opportunity to thank your participants, maybe repeat issues regarding the results and next steps from the welcome message. 
+**End message:** The end message will be displayed once respondents have submitted their data at the end of the questionnaire. It is a good opportunity to thank your respondents, maybe repeat issues regarding the results and next steps from the welcome message. 
 
 **End URL:** If you want to redirect people to a different page after they have finished the survey (e.g. the home page an equality unit), please enter the corresponding URL in this field.
 
@@ -219,7 +219,6 @@ The following questions should be revised and adapted to the organizational cont
 | Q21| WCJC021 | In the last 12 months, do you feel that any of the following have been a barrier to you accessing training that you needed or wanted? | Editable
 | Q22| WCWI011b| Which of the following forms of leave have you taken / or are you currently taking? | Editable
 | Q25| WCWI016 | Please indicate the availability of the following options either before, during or upon your return from your most recent or current parental leave at your organization | Editable 
-| Q27| WCWI018 | Please indicate how helpful each of the following was in preparing you for your parental leave | Editable 
 | Q29 | WCWI021 | Please indicate how helpful each of the following was in facilitating your return to work after your parental leave at your current organization | Editable
 | Q50 | SDEM002 | Do you currently perceive yourself to be part of a majority or minority ethnic group? | Editable
 
