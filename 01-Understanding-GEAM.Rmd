@@ -1,9 +1,36 @@
 Understanding the GEAM
 ======================
 
-The ACT Gender Equality Audit and Monitoring (GEAM) survey is a modular questionnaire framework which captures the perceptions of employees regarding key dimensions of gender equality within an organizational unit. Ideally it is launched during the initial stages of a Gender Equality Plan to understand better the specific challenges faced by each institution from the perspective of its employees. As such it complements other types of data collected for example from Human Resource departments on the representation of women and men across different staff categories and salary brackets. The GEAM questionnaire offers a second layer of insights about people's experiences and perceptions within an organization. Perceptions are important for example to understand the working climate, experiences of bullying or harassment, burnout or job satisfaction. Overall, it provides a holistic picture regarding the experience of gender equality that goes beyond the basic, numerical representation and participation of women and men within an organization. It offers a unique tool to capture the perceptions and experiences of working conditions from a gender perspective.
+The ACT Gender Equality Audit and Monitoring (GEAM) survey is a modular questionnaire framework which captures the perceptions of employees regarding key dimensions of gender equality within an organizational unit. Ideally it is launched during the initial stages of a Gender Equality Plan to understand better the specific challenges faced by each institution from the perspective of its employees. As such it complements other types of data collected for example from Human Resource departments on the representation of women and men across different staff categories and salary brackets. 
 
 The GEAM questionnaire offers a second layer of insights abouts people's experiences and perceptions within an organization. Perceptions are important for example to understand the working climate, experiences of bullying or harrassment, burnout or job satisfaction. Overall, it provides a holistic picture regarding the experience of gender equality that goes beyond the basic, numerical representation and participation of women and men within an organization. It offers a unique tool to capture the perceptions and experiences of **working conditions from a gender perspective**.
+
+GEAM as *one* element of GEP Audit
+----------------------------------
+
+The GEAM survey is a starting off point that provides organisations with a consistent and validated means of collecting gender equality data. As such it forms part of the usual GEP design, implementation and monitoring processes. As such it should be used in conjunction with other means of data collection, such sa focus groups, semi-structured interviews, document analysis as illustrated below:
+
+![](images/GEP_AuditData.png "GEP Audit - Data Sources")
+
+In addition, the GEAM should not be seen as something that can be setup and run by a single person. Rather, it requires a combination of key individuals from the organisation to setup and above all **interpret the results** of the survey in context, to determine what these results mean in terms of the organisation's next steps for their gender equality plans, and to implement these action plans effectively.
+
+In the UK, for example, the Athena SWAN charter programme describes the collection of gender equality data as only part of the process. Institutions and departments applying to this gender equality award scheme, as a very first step, need to create a self-assessment team that includes:
+
+-   staff who can collect and analyse the appropriate data (e.g. researchers and social scientists from within the organization and representatives from Human Resources with access to staff data);
+-   decision-makers who can ensure that gender equality work in the organization receives the resources required to deliver it, and integrate the findings into organizational strategy and decision-making.
+
+An effective self-assessment team must have authority within the organization, and include a **variety of staff members** so that those involved in the interpretation and application of the research results are representative of the overarching staff population of the organization. For example, the team should include staff on different types of contracts (i.e. full- versus part-time; researchers, academics and administrative staff) and from different parts of the organization (i.e. one person from each faculty or department).
+
+Having an effective team and undertaking a thorough self-assessment is key to an organization's gender equality research and planning. A thorough self-assessment includes, but is not limited to the following activities:
+
+-   Reflecting on a range of quantitative and qualitative data to identify both challenges and opportunities with regards to gender equality, collected through the GEAM as well as through other methods such as focus groups and interviews with key members of staff.
+-   Evaluating relevant policies, practices and activities.
+-   Responding to the findings of the above and establishing gender equality-based priority areas and appropriate aspirations and targets.
+-   Developing an evidence-based, comprehensive action plan to underpin advancement against the agreed priorities.
+-   Evaluating the effectiveness of actions undertaken on an ongoing basis, to ensure actions are delivering impact against objectives, and evolving the action plan in response to evaluation.
+
+The GEAM should be seen as an available instrument that a self-assessment team can use to gather high quality data within their organization.
+
 
 Thematic coverage and modules
 -----------------------------
