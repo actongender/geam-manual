@@ -97,15 +97,11 @@ knitr::include_graphics(path="images/private-moderate-publication-settings.png")
 <p>&nbsp;</p>
 
 ### Comfort privacy setting {#privacy-comfort}
-For this privacy setting, LimeSurvey will create a “participant table” which offers a precise control over the target population responses. However, it requires that the survey administrator has access to a database of names and emails of potential respondents. Once the “participant table” has been uploaded to LimeSurvey, it exists as a separate table in addition to the response table of the survey, i.e. survey responses and participant information is not stored together. 
-
-```{block, type="noteHighlight"}
-The participant information is stored in a separate table than the survey responses. Survey responses are not associated with participant information unless the survey administrator combines this information.
-```
+For this privacy setting, LimeSurvey will create a “participant table” which offers a precise control over the target population responses. However, it requires that the survey administrator has access to a database of names and emails of potential respondents. Once the “participant table” has been uploaded to LimeSurvey, it exists as a separate table in addition to the response table of the survey. When downloading survey results, none of the information stored in the participant table will be available in the result table. However, survey administrators can associate participant information and responses at the level of the webinterface of LimeSurvey in case the "Settings > Participants settings > **Anonymized responses**" has been deactiviated. In case "Anonymized responses" is "Off", survey administrators can jump from the survey participant tracking to the actual response. In case "Anonymized responses" is "On" such linkage is deactivated. 
 
 Survey respondents can be either uploaded with a CSV file or created “on the fly” by allowing respondents to register their contact details before entering the first page of the questionnaire. Upon registering, the system will send out an invitation email containing the unique URL for their submission.
 
-The advantage of this configuration is that personalized invitations and reminders can be send out which usually **increments the overall response rate** to the survey substantially. Instructions on how to create a “participant table” can be found  in the online manual: 
+The advantage of creating a participant table is that personalized invitations and reminders can be send out which usually **increments the overall response rate** to the survey substantially. Instructions on how to create a “participant table” can be found  in the online manual: 
 
 ```{block, type="noteManual"}
 https://manual.limesurvey.org/Survey_participants 
@@ -116,7 +112,7 @@ A unique identifier (token) is used to track the progress of a respondent’s su
 Respondents can return and edit or delete their submission any time, even after their final submission. After a survey has been closed, respondents can request the deletion of their data by writing to the survey administrator. The email address from which the request is send has to match the entry in the participant database. 
 
 ```{block, note="noteRecommend"}
-Use participant tables when contact details are available, response tracking is important and the questionnaire is rather long but does not contain very privacy sensitive information. 
+Use participant tables when contact details are available, response tracking is important and the questionnaire is rather long but does not contain privacy sensitive information. 
 ```
 
 
@@ -158,7 +154,7 @@ As a complement to the explanations already given in the LimeSurvey manual.
 
 Participant settings: 
 
-- **Anonymized**. Concerns storage of meta-information with each survey entry. If turn "on", this overwrites the submission start and completion dates with a generic time 1980-01-91 in order to avoid potential matching of server log entries with survey submission.   
+- **Anonymized**. Concerns storage of meta-information with each survey entry. If turn "on", this overwrites the submission start and completion dates with a generic time 1980-01-91 in order to avoid potential matching of server log entries with survey submission. In case a participant table has been created and "Anonymized" is off, survey administrators can jump from response tracking to the submitted data for each participant in the online LimeSurvey interface. If "Anonymized" is activated, this is not longer possible. 
 
 - **Enable token-based response persistence.** If enabled, concerns mainly an automatic “interrupt and resume later” functionality. Tokens are used to store persistent data for an ongoing submission. In case a browser crashes or a browser window is accidentally closed, respondents can resume their submission where they left off. This persistence functionality works independent from the “anonymization” feature turned “on” or “off”. 
 
