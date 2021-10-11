@@ -1,6 +1,5 @@
 Understanding the GEAM
 ======================
-
 The ACT Gender Equality Audit and Monitoring (GEAM) survey is a modular questionnaire framework which captures the perceptions of employees regarding key dimensions of gender equality within an organizational unit. Ideally it is launched during the initial stages of a Gender Equality Plan to understand better the specific challenges faced by each institution from the perspective of its employees. As such it complements other types of data collected for example from Human Resource departments on the representation of women and men across different staff categories and salary brackets. 
 
 The GEAM questionnaire offers a second layer of insights abouts people's experiences and perceptions within an organization. Perceptions are important for example to understand the working climate, experiences of bullying or harrassment, burnout or job satisfaction. Overall, it provides a holistic picture regarding the experience of gender equality that goes beyond the basic, numerical representation and participation of women and men within an organization. It offers a unique tool to capture the perceptions and experiences of **working conditions from a gender perspective**.

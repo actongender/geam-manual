@@ -102,13 +102,19 @@ The GEAM questionnaire is available in 8 additional languages, apart from Englis
 +------------+----+----+--------------------------------------------------------------------------------------------------------+
 | Slovenian  |    | x  | Ana Hofman, Jovana Mihajlović, Research Centre of the Slovenian Academy of Sciences and Arts, Slovenia |
 +------------+----+----+--------------------------------------------------------------------------------------------------------+
-| Spanish    | x  | x  | Blas Fernandez, FLACSO Argentina; Sergi Yanes, UOC, Spain.                                             |
+| Spanish    | x  | x  | Blas Fernandez, FLACSO Argentina; Sergi Yanes, UOC, Spain                                              |
 +------------+----+----+--------------------------------------------------------------------------------------------------------+
 | French     | x  | x  | Florian Beauvallet, Conference des charge.es de mission parité diversité, cped-egalite.fr              |
 +------------+----+----+--------------------------------------------------------------------------------------------------------+
 | Italian    |    | x  | Natasha Sega, SmartVenice, Italy                                                                       |
 +------------+----+----+--------------------------------------------------------------------------------------------------------+
 | Greek      |    | x  | Leonidas Antoniou, Cyprus                                                                              |
++------------+----+----+--------------------------------------------------------------------------------------------------------+
+| Czech      |    | x  | Jarmila Lancošová, Czech Academy of Sciences, Czech Republic                                           |
++------------+----+----+--------------------------------------------------------------------------------------------------------+
+| Romanian   |    | x  | Alisa Petroff, UOC, Spain                                                                              |
++------------+----+----+--------------------------------------------------------------------------------------------------------+
+| Serbian    |    | x  | Balsa Delibasic, University of Belgrade, Serbia                                                        |
 +------------+----+----+--------------------------------------------------------------------------------------------------------+
 
 
